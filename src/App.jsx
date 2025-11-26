@@ -5,13 +5,13 @@ import Services from "./pages/Services";
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
