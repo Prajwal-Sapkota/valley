@@ -47,7 +47,7 @@ const Navigation = () => {
 
                         <button
                             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                            className="lg:hidden text-white p-2 z-50"
+                            className="lg:hidden text-white p-2 z-50 cursor-pointer"
                         >
                             {mobileMenuOpen ? <FaTimes className="h-6 w-6" /> : <FaBars className="h-6 w-6" />}
                         </button>
@@ -59,7 +59,7 @@ const Navigation = () => {
                                     className="relative z-50 group"
                                 >
                                     <button
-                                        className="flex items-center text-white px-3 py-2 text-sm font-medium relative transition-colors"
+                                        className="flex items-center text-white px-3 py-2 text-sm font-medium relative transition-colors cursor-pointer"
                                         onMouseEnter={() => item.hasDropdown && setActiveDropdown(item.label)}
                                     >
                                         {item.label}
@@ -86,7 +86,7 @@ const Navigation = () => {
                         <div className="hidden lg:flex items-center space-x-4 z-50 mt-4 mr-20">
                             <div className="relative group">
                                 <button
-                                    className="flex items-center text-white px-3 py-2 text-sm font-medium relative"
+                                    className="flex items-center text-white px-3 py-2 text-sm font-medium relative cursor-pointer"
                                     onMouseEnter={() => setActiveDropdown('PAGES')}
                                 >
                                     PAGES
@@ -100,28 +100,32 @@ const Navigation = () => {
                                         onMouseEnter={() => setActiveDropdown('PAGES')}
                                         onMouseLeave={() => setActiveDropdown(null)}
                                     >
-                                        <a className="block px-4 py-2 text-sm hover:text-[#b99d75]">About Us</a>
-                                        <a className="block px-4 py-2 text-sm hover:text-[#b99d75]">Gallery</a>
+                                        <a href='/about' className="block px-4 py-2 text-sm hover:text-[#b99d75]">About</a>
+                                        <a href='/services' className="block px-4 py-2 text-sm hover:text-[#b99d75]">Services</a>
+                                        <a className="block px-4 py-2 text-sm hover:text-[#b99d75]">Rooms & Suites</a>
+                                        <a className="block px-4 py-2 text-sm hover:text-[#b99d75]">Restaurant</a>
+                                        <a className="block px-4 py-2 text-sm hover:text-[#b99d75]">Local Activities</a>
+                                        <a className="block px-4 py-2 text-sm hover:text-[#b99d75]">Wellness</a>
                                         <a className="block px-4 py-2 text-sm hover:text-[#b99d75]">Contact</a>
-                                        <a className="block px-4 py-2 text-sm hover:text-[#b99d75]">FAQ</a>
+                                        <a className="block px-4 py-2 text-sm hover:text-[#b99d75]">Our Blog</a>
                                     </div>
                                 )}
                             </div>
 
-                            <button className="flex items-center text-white px-3 py-2 text-sm font-medium group relative">
+                            <button className="flex items-center text-white px-3 py-2 text-sm font-medium group relative cursor-pointer">
                                 <FaGlobe className="h-4 w-4 mr-1" />
                                 EN
                                 <span className="absolute left-0 -bottom-1 h-[2px] bg-white w-0 group-hover:w-full transition-all duration-300"></span>
                             </button>
 
-                            <button id="reserve" className="bg-transparent border border-white text-white px-6 py-2 text-sm hover:bg-white hover:text-black transition-all group relative">
+                            <button id="reserve" className="bg-transparent border border-white text-white px-6 py-2 text-sm hover:bg-white hover:text-black transition-all group relative cursor-pointer">
                                 Reserve Now
                                 <span className="absolute left-0 -bottom-1 bg-white w-0 group-hover:w-full transition-all duration-300"></span>
                             </button>
                         </div>
 
                         <div className="lg:hidden flex items-center space-x-3 z-50">
-                            <button className="flex items-center text-white px-2 py-1 text-sm">
+                            <button className="flex items-center text-white px-2 py-1 text-sm cursor-pointer">
                                 <FaGlobe className="h-4 w-4 mr-1" />
                                 EN/FR
                             </button>
@@ -167,33 +171,33 @@ const Navigation = () => {
                                             <div className="ml-4 space-y-2 pb-3 mobile-nav-items">
                                                 {item.label === 'Dine' && (
                                                     <>
-                                                        <a className="block py-2 text-white/80 text-sm hover:text-white">Fine Dining Restaurant</a>
-                                                        <a className="block py-2 text-white/80 text-sm hover:text-white">Bar & Lounge</a>
-                                                        <a className="block py-2 text-white/80 text-sm hover:text-white">Room Service</a>
-                                                        <a className="block py-2 text-white/80 text-sm hover:text-white">Coffee Shop</a>
+                                                        <a className="block py-2 text-white/80 text-sm hover:text-white cursor-pointer ">Fine Dining Restaurant</a>
+                                                        <a className="block py-2 text-white/80 text-sm hover:text-white cursor-pointer">Bar & Lounge</a>
+                                                        <a className="block py-2 text-white/80 text-sm hover:text-white cursor-pointer">Room Service</a>
+                                                        <a className="block py-2 text-white/80 text-sm hover:text-white cursor-pointer">Coffee Shop</a>
                                                     </>
                                                 )}
                                                 {item.label === 'Play' && (
                                                     <>
-                                                        <a className="block py-2 text-white/80 text-sm hover:text-white">Swimming Pool</a>
-                                                        <a className="block py-2 text-white/80 text-sm hover:text-white">Tennis Court</a>
-                                                        <a className="block py-2 text-white/80 text-sm hover:text-white">Fitness Center</a>
-                                                        <a className="block py-2 text-white/80 text-sm hover:text-white">Entertainment</a>
+                                                        <a className="block py-2 text-white/80 text-sm hover:text-white cursor-pointer">Swimming Pool</a>
+                                                        <a className="block py-2 text-white/80 text-sm hover:text-white cursor-pointer">Tennis Court</a>
+                                                        <a className="block py-2 text-white/80 text-sm hover:text-white cursor-pointer">Fitness Center</a>
+                                                        <a className="block py-2 text-white/80 text-sm hover:text-white cursor-pointer">Entertainment</a>
                                                     </>
                                                 )}
                                                 {item.label === 'Relax' && (
                                                     <>
-                                                        <a className="block py-2 text-white/80 text-sm hover:text-white">Spa & Wellness</a>
-                                                        <a className="block py-2 text-white/80 text-sm hover:text-white">Yoga & Meditation</a>
-                                                        <a className="block py-2 text-white/80 text-sm hover:text-white">Massage Therapy</a>
+                                                        <a className="block py-2 text-white/80 text-sm hover:text-white cursor-pointer">Spa & Wellness</a>
+                                                        <a className="block py-2 text-white/80 text-sm hover:text-white cursor-pointer">Yoga & Meditation</a>
+                                                        <a className="block py-2 text-white/80 text-sm hover:text-white cursor-pointer">Massage Therapy</a>
                                                     </>
                                                 )}
                                                 {item.label === 'Pages' && (
                                                     <>
-                                                        <a className="block py-2 text-white/80 text-sm hover:text-white">About Us</a>
-                                                        <a className="block py-2 text-white/80 text-sm hover:text-white">Gallery</a>
-                                                        <a className="block py-2 text-white/80 text-sm hover:text-white">Contact</a>
-                                                        <a className="block py-2 text-white/80 text-sm hover:text-white">FAQ</a>
+                                                        <a className="block py-2 text-white/80 text-sm hover:text-white cursor-pointer">About Us</a>
+                                                        <a className="block py-2 text-white/80 text-sm hover:text-white cursor-pointer">Gallery</a>
+                                                        <a className="block py-2 text-white/80 text-sm hover:text-white cursor-pointer">Contact</a>
+                                                        <a className="block py-2 text-white/80 text-sm hover:text-white cursor-pointer">FAQ</a>
                                                     </>
                                                 )}
                                             </div>
@@ -210,7 +214,7 @@ const Navigation = () => {
                                         1202 Genève,<br />
                                         Switzerland
                                     </p>
-                                    <button className="flex items-center text-white font-medium text-sm hover:text-white/80 transition-colors">
+                                    <button className="flex items-center text-white font-medium text-sm hover:text-white/80 transition-colors cursor-pointer">
                                         <FaMapMarkerAlt className="h-4 w-4 mr-2" />
                                         VIEW ON MAP
                                     </button>

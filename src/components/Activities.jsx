@@ -73,7 +73,7 @@ const Activities = () => {
 
                                     <button id='discover'
                                         href={activity.link}
-                                        className="inline-flex items-center gap-2 text-[#1b1c1b] font-semibold hover:text-[#ba9d75] transition-colors duration-300"
+                                        className="inline-flex items-center gap-2 text-[#1b1c1b] font-semibold hover:text-[#ba9d75] transition-colors duration-300 cursor-pointer"
                                     >
                                         Discover More
                                         <FaArrowRight />

@@ -37,7 +37,7 @@ const Holiday = () => {
                         <div id="holiday" className="absolute bottom-2 sm:bottom-4 left-2 sm:left-4 text-white">
                             <p className=" text-left text-[9px] sm:text-xs font-semibold tracking-wider mb-1">{activity.category}</p>
                             <h2 className="text-lg sm:text-xl font-semibold mb-1">{activity.title}</h2>
-                            <button className="text-xs sm:text-sm font-semibold flex items-center gap-1 sm:gap-2 hover:opacity-80">
+                            <button className="text-xs sm:text-sm font-semibold flex items-center gap-1 sm:gap-2 hover:opacity-80 cursor-pointer">
                                 DISCOVER TRIP <span>›</span>
                             </button>
                         </div>

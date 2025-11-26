@@ -100,7 +100,7 @@ export default function Stay() {
 
                     <button
                         id="check"
-                        className="bg-[#ba9d75] hover:bg-[#ab916c] text-white font-semibold px-8 py-3 w-full md:w-8xl mt-2 md:mt-0 transition-colors duration-300"
+                        className="bg-[#ba9d75] hover:bg-[#ab916c] text-white font-semibold px-8 py-3 w-full md:w-8xl mt-2 md:mt-0 transition-colors duration-300 cursor-pointer"
                     >
                         Check Availability
                     </button>

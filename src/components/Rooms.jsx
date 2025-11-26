@@ -57,7 +57,7 @@ const RoomsSlider = () => {
                         </h3>
                     </div>
                     <div>
-                        <button id="explore" className="inline-flex items-center gap-2 hover:text-[#ba9d75] text-[#1b1c1b] font-medium py-2 px-4 md:py-3 md:px-6 transition-colors duration-300 text-2xl sm:text-lg md:text-3xl mt-12">
+                        <button id="explore" className="inline-flex items-center gap-2 hover:text-[#ba9d75] text-[#1b1c1b] font-medium py-2 px-4 md:py-3 md:px-6 transition-colors duration-300 text-2xl sm:text-lg md:text-3xl mt-12 cursor-pointer">
                             Explore All Accommodations
                             <FaArrowRight size={14} />
                         </button>
@@ -67,13 +67,13 @@ const RoomsSlider = () => {
                 <div className="relative overflow-hidden shadow-lg mb-8">
                     <button
                         onClick={prevSlide}
-                        className="absolute top-1/2 left-2 md:left-4 -translate-y-1/2 bg-black/50 text-white p-2 md:p-3 rounded-full hover:bg-black/70 z-10"
+                        className="absolute top-1/2 left-2 md:left-4 -translate-y-1/2 bg-black/50 text-white p-2 md:p-3 rounded-full hover:bg-black/70 z-10 cursor-pointer"
                     >
                         <FaChevronLeft size={14} />
                     </button>
                     <button
                         onClick={nextSlide}
-                        className="absolute top-1/2 right-2 md:right-4 -translate-y-1/2 bg-black/50 text-white p-2 md:p-3 rounded-full hover:bg-black/70 z-10"
+                        className="absolute top-1/2 right-2 md:right-4 -translate-y-1/2 bg-black/50 text-white p-2 md:p-3 rounded-full hover:bg-black/70 z-10 cursor-pointer"
                     >
                         <FaChevronRight size={14} />
                     </button>

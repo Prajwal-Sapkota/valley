@@ -97,7 +97,7 @@ export default function Booking() {
           </div>
 
           <div>
-            <button id="check" className="w-full bg-[#ba9d75] text-white font-semibold py-3 px-6  hover:bg-[#ab916c] transition-colors">
+            <button id="check" className="w-full bg-[#ba9d75] text-white font-semibold py-3 px-6  hover:bg-[#ab916c] transition-colors cursor-pointer">
               Check Availability
             </button>
           </div>
