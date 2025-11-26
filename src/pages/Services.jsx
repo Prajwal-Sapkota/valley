@@ -1,9 +1,9 @@
-import Footer from "../../components/Footer";
-import Amenities from "./Amenities";
-import Discover from "./Discover";
-import Hero from "./Hero";
-import Stays from "./Stays";
-import Testimonial from "./Testimonial";
+import Footer from "../components/Footer";
+import Amenities from "./Services/Amenities";
+import Discover from "./Services/Discover";
+import Hero from "./Services/Hero";
+import Stays from "./Services/Stays";
+import Testimonial from "./Services/Testimonial";
 
 
 

@@ -1,9 +1,9 @@
-import Footer from "../../components/Footer";
-import Essentials from "./Essentials";
-import Experience from "./Experience";
-import Hero from "./Hero";
-import Luxury from "./Luxury";
-import Stay from "./Stay";
+import Footer from "../components/Footer";
+import Essentials from "./About/Essentials";
+import Experience from "./About/Experience";
+import Hero from "./About/Hero";
+import Luxury from "./About/Luxury";
+import Stay from "./About/Stay";
 
 
 function About() {
