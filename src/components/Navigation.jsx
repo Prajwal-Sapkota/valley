@@ -100,14 +100,14 @@ const Navigation = () => {
                                         onMouseEnter={() => setActiveDropdown('PAGES')}
                                         onMouseLeave={() => setActiveDropdown(null)}
                                     >
-                                        <a href='/about' className="block px-4 py-2 text-sm hover:text-[#b99d75]">About</a>
-                                        <a href='/services' className="block px-4 py-2 text-sm hover:text-[#b99d75]">Services</a>
-                                        <a href='/rooms' className="block px-4 py-2 text-sm hover:text-[#b99d75]">Rooms & Suites</a>
-                                        <a href='restaurant' className="block px-4 py-2 text-sm hover:text-[#b99d75]">Restaurant</a>
-                                        <a className="block px-4 py-2 text-sm hover:text-[#b99d75]">Local Activities</a>
-                                        <a className="block px-4 py-2 text-sm hover:text-[#b99d75]">Wellness</a>
-                                        <a className="block px-4 py-2 text-sm hover:text-[#b99d75]">Contact</a>
-                                        <a className="block px-4 py-2 text-sm hover:text-[#b99d75]">Our Blog</a>
+                                        <a href='/about' className="block px-4 py-2 text-sm hover:text-[#b99d75] cursor-pointer">About</a>
+                                        <a href='/services' className="block px-4 py-2 text-sm hover:text-[#b99d75] cursor-pointer">Services</a>
+                                        <a href='/rooms' className="block px-4 py-2 text-sm hover:text-[#b99d75] cursor-pointer">Rooms & Suites</a>
+                                        <a href='restaurant' className="block px-4 py-2 text-sm hover:text-[#b99d75] cursor-pointer">Restaurant</a>
+                                        <a href='/activities' className="block px-4 py-2 text-sm hover:text-[#b99d75] cursor-pointer">Local Activities</a>
+                                        <a href='/wellness' className="block px-4 py-2 text-sm hover:text-[#b99d75] cursor-pointer">Wellness</a>
+                                        <a className="block px-4 py-2 text-sm hover:text-[#b99d75] cursor-pointer">Contact</a>
+                                        <a className="block px-4 py-2 text-sm hover:text-[#b99d75] cursor-pointer">Our Blog</a>
                                     </div>
                                 )}
                             </div>

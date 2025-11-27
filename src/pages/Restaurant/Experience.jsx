@@ -17,7 +17,7 @@ export default function Experience() {
                     {/* LEFT IMAGES */}
                     <div className="flex flex-col space-y-6">
 
-                        {/* Desktop Overlap → Only visible on lg+ */}
+                       
                         <div className="relative hidden lg:block">
                             {/* Main Image */}
                             <div className="relative z-10 ml-2">
