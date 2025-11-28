@@ -68,12 +68,12 @@ export default function Checkout() {
                     Interested in afternoon tea, bar, cigar lounge?
                 </h3>
 
-                <p className="text-lg font-medium text-black mb-10">
+                <h1 className="text-lg font-medium text-black mb-10">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br />
                     Cras dapibus. Vivamus elementum semper nisi.
-                </p>
+                </h1>
 
-                <button className="bg-[#ba9d75] text-white border border-[#ba9d78] w-64 py-3 font-semibold hover:bg-[#ab916c]">
+                <button id="restaurant" className="bg-[#ba9d75] text-white border border-[#ba9d78] w-64 py-3 font-semibold hover:bg-[#ab916c]">
                     View All Restaurants
                 </button>
             </div>

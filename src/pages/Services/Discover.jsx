@@ -60,12 +60,12 @@ const Discover = () => {
                             <MdCall className="text-5xl text-[#ba9d75]" />
 
                             <div className="space-y-1">
-                                <p className="text-left text-sm font-medium text-[#ba9d75] uppercase tracking-widest">
+                                <h5 className="text-left text-sm font-medium text-[#ba9d75] uppercase tracking-widest">
                                     CALL US FOR MORE INFORMATION
-                                </p>
+                                </h5>
                                 <a
                                     href="tel:+41223456788"
-                                    className="text-left text-2xl sm:text-4xl font-light text-black hover:text-[#ba9d75] transition-colors duration-300 inline-block"
+                                    className="text-left text-2xl sm:text-4xl font-light text-black hover:text-[#ba9d75] transition-colors duration-300 inline-block number"
                                 >
                                     +41 22 345 67 88
                                 </a>
@@ -98,9 +98,9 @@ const Discover = () => {
                                         }`}
                                 >
                                     <div className="pb-6 px-4">
-                                        <p className="text-gray-600 leading-relaxed text-lg">
+                                        <h1 className="text-gray-600 leading-relaxed text-lg">
                                             {service.description}
-                                        </p>
+                                        </h1>
                                     </div>
                                 </div>
 

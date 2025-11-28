@@ -48,7 +48,7 @@ export default function Stay() {
                         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
                             {statsData.map((stat, index) => (
                                 <div key={index} className="text-center">
-                                    <span className="text-5xl md:text-7xl font-light text-white mb-2 drop-shadow-lg">
+                                    <span id="count1" className="text-5xl md:text-7xl font-light text-white mb-2 drop-shadow-lg">
                                         {counts[index]}
                                     </span>
                                     <h5 className="text-sm md:text-sm text-white uppercase drop-shadow-lg">
@@ -59,7 +59,7 @@ export default function Stay() {
                         </div>
                     </div>
                 </div>
-                <button className="bg-transparent text-white border border-[#ba9d75] w-64 font-semibold py-3 px-6  hover:bg-[#ab916c] transition-colors cursor-pointer mt-8 mb-4">
+                <button id="explore" className="bg-transparent text-white border border-[#ba9d75] w-64 font-semibold py-3 px-6  hover:bg-[#ab916c] transition-colors cursor-pointer mt-8 mb-4">
                     Explore Accomodation
                 </button>
             </div>

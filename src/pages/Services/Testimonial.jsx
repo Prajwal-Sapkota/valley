@@ -77,25 +77,25 @@ const Testimonial = () => {
                                     }`}
                             >
 
-                                <div className="flex justify-center items-center h-full">
+                                <div id='icon' className="flex justify-center items-center h-full">
                                     <GiHotMeal className="text-[#ba9d75]" size={64} />
                                 </div>
 
                                 {/* Testimonial Text */}
-                                <blockquote className="text-2xl sm:text-3xl lg:text-4xl font-light text-white leading-relaxed mb-8 px-4">
+                                <blockquote id='text' className="text-2xl sm:text-3xl lg:text-4xl font-light text-white leading-relaxed mb-8 px-4">
                                     "{testimonial.text}"
                                 </blockquote>
 
-                                <div className="mb-8 flex justify-center">
+                                <div id='stars' className="mb-8 flex justify-center">
                                     {renderStars(testimonial.rating)}
                                 </div>
 
                                 {/* Author Info */}
                                 <div className="text-white mt-12">
-                                    <div className="text-xl font-semibold mb-2">
+                                    <div id='author' className="text-xl font-semibold mb-2">
                                         {testimonial.author}
                                     </div>
-                                    <div className="text-sm text-gray-300 uppercase tracking-widest">
+                                    <div id='source' className="text-sm text-gray-300 uppercase tracking-widest">
                                         {testimonial.source}
                                     </div>
                                 </div>

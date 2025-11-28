@@ -66,7 +66,7 @@ export default function Experience() {
                         <h3 className="text-left text-4xl md:text-5xl font-light text-[#1b1c1b] mb-10 uppercase">
                             Experience exquisite cuisine at The Restaurant
                         </h3>
-                        <p className="text-left text-sm md:text-lg font-light">We are committed to create wonderful memories for all guests with every stay. Carefully curated menus incorporate locally sourced ingredients into exquisite dishes that reflect the locals and the world around them. Wherever you are in the world, we’ll take your taste buds on a journey they’ll never forget. Authentic flavors and culinary skills combine to create an unforgettable dining experience. </p>
+                        <h1 className="text-left text-sm md:text-lg font-light">We are committed to create wonderful memories for all guests with every stay. Carefully curated menus incorporate locally sourced ingredients into exquisite dishes that reflect the locals and the world around them. Wherever you are in the world, we’ll take your taste buds on a journey they’ll never forget. Authentic flavors and culinary skills combine to create an unforgettable dining experience. </h1>
 
                         {/* NEW DATA IN GRID */}
                         <div className="grid grid-cols-1 gap-12">
@@ -79,9 +79,9 @@ export default function Experience() {
                                             <h3 className="text-left text-xl font-semibold text-[#1b1c1b]">
                                                 {service.title}
                                             </h3>
-                                            <p className="text-left text-[#1b1c1b]">
+                                            <h1 className="text-left text-[#1b1c1b]">
                                                 {service.description}
-                                            </p>
+                                            </h1>
                                         </div>
                                     </div>
                                 );

@@ -43,24 +43,24 @@
 .read-the-docs {
   color: #888;
 }
-span,button,h5{
+span,button,h5,#count1,#nav,.nav{
    font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
   font-weight:500;
   font-style: normal;
 }
-h1,#stay,#overview,#summer,#winter,#others,#holiday,#rate,#info,#form,#stayform,#address,#connect,#bottom{
+h1,#stay,#overview,#summer,#winter,#others,#holiday,#rate,#info,#form,#stayform,#address,#connect,#bottom, #price1 , #icon, #stars, #source, #time1 , #list, #form1,.nav1{
    font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
   font-weight:400;
   font-style: normal;
 }
-#count,#reserve,h3,#explore,#check,#discover,#subscribe,#direction{
+#count,h3,#explore,#check,#discover,#subscribe,#direction,#explore1 , #text, #author,#services2, #restaurant,#book,.reserve{
   font-family: "Marcellus", serif;
   font-weight: 400;
   font-style: normal;
 }
-.mobile-nav-items{
+.mobile-nav-items,.number,#reservation{
    font-family: "Marcellus", serif;
   font-weight: 400;
   font-style: normal;

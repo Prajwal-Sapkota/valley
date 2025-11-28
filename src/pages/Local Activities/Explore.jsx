@@ -37,7 +37,7 @@ const Explore = () => {
         { value: "33", label: "LIFTS" },
         { value: "6km", label: "LONGEST DESCENT" },
       ],
-      reverse: true, // Image on right
+      reverse: true, // image on right
     },
     {
       title: "Summer Activities",
@@ -49,47 +49,52 @@ const Explore = () => {
         { value: "21", label: "SAC HUTS" },
         { value: "4", label: "CABLEWAYS" },
       ],
-      reverse: false, // Image on left
+      reverse: false, // image on left
     },
   ];
 
   return (
-    <div className="w-full">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-16">
+      <div className="max-w-4xl mx-auto text-center mb-16">
+        <h5 className="text-xs sm:text-sm text-[#ba9d75] font-medium uppercase mb-4 drop-shadow-md">
+          Explore the majestic Swiss Alps
+        </h5>
+        <h3 className="text-2xl sm:text-3xl md:text-3xl font-semibold text-black leading-snug">
+          Andermatt awaits you with year-round outdoor activities amidst spectacular nature. When it comes to leisure activities, the Alps are almost unbeatable.
+        </h3>
+      </div>
+
       {sections.map((section, idx) => (
         <section
           key={idx}
           ref={sectionRefs[idx]}
-          className="relative w-full min-h-[96vh] bg-white flex flex-col items-center justify-center px-4 sm:px-6 lg:px-12 py-16"
+          className="relative w-full min-h-[96vh] flex flex-col items-center justify-center mb-24 lg:mb-32"
         >
           <div
-            className={`relative max-w-7xl w-full flex flex-col lg:flex-row ${
-              section.reverse ? "lg:flex-row-reverse" : ""
-            } items-center`}
+            className={`relative w-full flex flex-col lg:flex-row items-center ${section.reverse ? "lg:flex-row-reverse" : ""
+              }`}
           >
             {/* Image */}
             <div
-              className={`transition-all duration-1000 ease-out w-full lg:w-3/4 ${
-                section.reverse
+              className={`w-full lg:w-2/3 transition-all duration-1000 ease-out ${section.reverse
                   ? slideInLeft(isVisible[idx])
                   : slideInRight(isVisible[idx])
-              }`}
+                }`}
             >
               <img
                 src={section.image}
                 alt={section.title}
-                className="w-full h-[500px] lg:h-[700px] object-cover shadow-2xl"
+                className="w-full h-[500px] lg:h-[700px] object-cover shadow-2xl "
               />
             </div>
 
             {/* Content */}
             <div
-              className={`bg-black p-8 lg:p-12 space-y-6 transition-all duration-1000 ease-out w-full lg:w-1/2 ${
-                section.reverse
+              className={`bg-black p-8 lg:p-12 space-y-6 transition-all duration-1000 ease-out w-full lg:w-1/2 mt-8 lg:mt-0 lg:absolute lg:top-1/2 lg:-translate-y-1/2 ${section.reverse ? "lg:left-0" : "lg:right-0"
+                } z-10 shadow-2xl  ${section.reverse
                   ? slideInRight(isVisible[idx])
                   : slideInLeft(isVisible[idx])
-              } lg:absolute lg:top-1/2 lg:-translate-y-1/2 ${
-                section.reverse ? "lg:left-0" : "lg:right-0"
-              } z-10 shadow-2xl mt-8 lg:mt-0`}
+                }`}
             >
               <h5 className="text-sm text-[#ba9d75] uppercase tracking-wide">
                 {section.subtitle}
@@ -97,18 +102,20 @@ const Explore = () => {
               <h3 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white uppercase">
                 {section.title}
               </h3>
-              <p className="text-white leading-relaxed text-lg">{section.text}</p>
-              <button className="bg-transparent text-white px-8 py-3 font-semibold hover:bg-[#ba9d78] transition-colors duration-300 uppercase tracking-wide border border-[#ba9d75]">
+              <h1 className="text-white leading-relaxed text-lg">{section.text}</h1>
+              <button id="discover" className="bg-transparent text-white px-8 py-3 font-semibold hover:bg-[#ba9d78] transition-colors duration-300 uppercase tracking-wide border border-[#ba9d75]">
                 Discover More
               </button>
 
               <div className="grid grid-cols-3 gap-4 mt-6 text-white">
                 {section.stats.map((stat, idx2) => (
                   <div key={idx2} className="text-center p-3">
-                    <div className="text-2xl md:text-3xl font-bold mb-1">{stat.value}</div>
-                    <div className="text-xs md:text-sm font-medium text-[#ba9d75] uppercase tracking-wide">
+                    <h3 className="text-2xl md:text-3xl font-bold mb-1">
+                      {stat.value}
+                    </h3>
+                    <h1 className="text-xs md:text-sm font-medium text-[#ba9d75] uppercase tracking-wide">
                       {stat.label}
-                    </div>
+                    </h1>
                   </div>
                 ))}
               </div>

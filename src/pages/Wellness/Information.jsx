@@ -41,14 +41,14 @@ export default function Information() {
                         <h3 className="text-left text-4xl md:text-5xl font-light text-[#1b1c1b] mb-10 uppercase">
                             SPA TREATMENT
                         </h3>
-                        <p className="text-left text-sm md:text-lg font-light">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-                        <ul className="list-disc marker:text-[#ba9d75] text-black pl-6 text-left ">
+                        <h1 className="text-left text-sm md:text-lg font-light">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</h1>
+                        <ul id="list" className="list-disc marker:text-[#ba9d75] text-black pl-6 text-left ">
                             <li>Massage, Body Treatment & Facial Treatment</li>
                             <li>Two Saunas & One Steam bath</li>
                             <li>Bio- and Finnish saunas</li>
                         </ul>
 
-                        <button className="bg-[#ba9d75] text-white border border-[#ba9d78] w-64 py-3 font-semibold hover:bg-[#ab916c] mt-6">
+                        <button id="discover" className="bg-[#ba9d75] text-white border border-[#ba9d78] w-64 py-3 font-semibold hover:bg-[#ab916c] mt-6">
                             Request Information
                         </button>
 
@@ -69,7 +69,7 @@ export default function Information() {
                         <h3 className="text-left text-4xl md:text-5xl font-light text-[#1b1c1b] mb-10 uppercase">
                             Personal Training & Movement
                         </h3>
-                        <p className="text-left text-sm md:text-lg font-light">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                        <h1 className="text-left text-sm md:text-lg font-light">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</h1>
                         <div className="text-left space-y-2 text-black">
                             <span className=" text-2xl font-light">Opening Hours</span>
 
@@ -86,7 +86,7 @@ export default function Information() {
                         </div>
 
 
-                        <button className="bg-[#ba9d75] text-white border border-[#ba9d78] w-64 py-3 font-semibold hover:bg-[#ab916c] mt-6">
+                        <button id="discover" className="bg-[#ba9d75] text-white border border-[#ba9d78] w-64 py-3 font-semibold hover:bg-[#ab916c] mt-6">
                             Request Information
                         </button>
 

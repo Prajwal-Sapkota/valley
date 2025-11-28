@@ -17,24 +17,24 @@ export default function Culinary() {
                             <h3 className="text-left text-4xl md:text-5xl font-light text-[#1b1c1b] leading-tight">
                                 INDULGE YOUR SENSES AND DISCOVER NEW FLAVORS
                             </h3>
-                            <p className="text-left text-lg text-gray-600 leading-relaxed">
+                            <h1 className="text-left text-lg text-gray-600 leading-relaxed">
                                 The experienced chefs creates international specialties with unique flavors.
                                 Relax with gourmet cuisine and signature cocktails enhanced by beautiful music and
                                 stunning city views. From seasonal menus to diverse dining experiences,
                                 see what our chefs are preparing for you.
-                            </p>
+                            </h1>
                         </div>
 
                         {/* Contact Section */}
                         <div className="flex items-start gap-6">
                             <MdCall className="text-5xl text-[#ba9d75] mt-1" />
                             <div className="space-y-2">
-                                <p className=" text-left text-sm font-medium text-[#ba9d75] uppercase tracking-widest">
+                                <h1 className=" text-left text-sm font-medium text-[#ba9d75] uppercase tracking-widest">
                                     RESERVATION BY PHONE
-                                </p>
+                                </h1>
                                 <a
                                     href="tel:+41223456677"
-                                    className=" text-left text-2xl sm:text-3xl font-light text-black hover:text-[#ba9d75] transition-colors duration-300"
+                                    className=" text-left text-2xl sm:text-3xl font-light text-black hover:text-[#ba9d75] transition-colors duration-300 number"
                                 >
                                     +41 22 345 66 77
                                 </a>

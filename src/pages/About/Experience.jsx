@@ -15,10 +15,10 @@ export default function Experience() {
                         <h3 className=" text-left text-4xl md:text-5xl font-light text-[#1b1c1b] mb-10">
                             INDULGE, ESCAPE & RELEAX IN THE MOUNTAINS
                         </h3>
-                        <h3 className=" text-left text-xl md:text-xl font-light text-[#1b1c1b] mb-10">
+                        <h1 className=" text-left text-xl md:text-xl font-light text-[#1b1c1b] mb-10">
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                        </h3>
-                        <button className="bg-transparent text-black border border-[#ba9d75] w-48 font-semibold py-3 px-6  hover:bg-[#ab916c] hover:text-white transition-colors cursor-pointer">
+                        </h1>
+                        <button id="discover" className="bg-transparent text-black border border-[#ba9d75] w-48 font-semibold py-3 px-6  hover:bg-[#ab916c] hover:text-white transition-colors cursor-pointer">
                             Discover More
                         </button>
                         

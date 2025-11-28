@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Navigation from '../../components/Navigation';
 
 const Hero = () => {
-    const backgroundImageUrl = "/images/about1.avif";
+    const backgroundImageUrl = "/images/blog1.avif";
     
     const [animateText, setAnimateText] = useState(false);
 
@@ -14,7 +14,7 @@ const Hero = () => {
     return (
         <div className="relative">
             <div
-                className="relative bg-cover bg-center bg-no-repeat text-white min-h-screen"
+                className="relative bg-cover bg-center bg-no-repeat text-white "
                 style={{ backgroundImage: `url(${backgroundImageUrl})` }}
             >
                 <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -28,11 +28,11 @@ const Hero = () => {
                         animateText ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
                     }`}>
                         
-                        <h3 className="text-2xl md:text-3xl lg:text-7xl font-light  tracking-wider mb-4">
-                            ABOUT THE HOTEL
+                        <h3 className="text-2xl md:text-3xl lg:text-7xl font-light  tracking-wider mb-6">
+                            OUR BLOG
                         </h3>
-                        <h1 className="text-md md:text-sm lg:text-lg font-light tracking-wide mb-6">
-                            Welcome to CozyStay, a boutique resort in the heart of Swiss Alps
+                        <h1 className="text-lg md:text-lg lg:text-md font-light tracking-wide mb-6">
+                            Check out the latest news and events of the hotel.?
                         </h1>
                     </div>
                 </div>

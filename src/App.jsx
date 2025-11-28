@@ -6,6 +6,8 @@ import Rooms from "./pages/Rooms";
 import Restaurant from "./pages/Restaurant";
 import Activities from "./pages/Activities";
 import Wellness from "./pages/Wellness";
+import Contact from "./pages/Contact";
+import Blog from "./pages/Blog";
 
 function App() {
   return (
@@ -14,10 +16,13 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/rooms" element={<Rooms />}/>
-        <Route path="/restaurant" element={<Restaurant/>} />
-        <Route path="/activities" element={<Activities/>} />
-        <Route path="/wellness" element={<Wellness/>} />
+        <Route path="/rooms" element={<Rooms />} />
+        <Route path="/restaurant" element={<Restaurant />} />
+        <Route path="/activities" element={<Activities />} />
+        <Route path="/wellness" element={<Wellness />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/blog" element={<Blog />} />
+
 
       </Routes>
     </Router>

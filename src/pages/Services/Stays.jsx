@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 
 const Stays = () => {
     const suites = [
-        { id: 1, name: "Signature Suite", size: "60m²", view: "Great Mountain View", guests: 4, price: "$399", image: "/images/room4.avif" },
-        { id: 2, name: "Prestige Suite", size: "200m²", view: "Great Mountain View", guests: 6, price: "$599", image: "/images/room5.avif" },
-        { id: 3, name: "Junior Deluxe Suite", size: "90m²", view: "Village View", guests: 4, price: "$449", image: "/images/room6.avif" },
-        { id: 4, name: "Grand Deluxe Suite", size: "120m²", view: "Panoramic Mountain View", guests: 5, price: "$699", image: "/images/room7.avif" }
+        { name: "Signature Suite", size: "60m²", view: "Great Mountain View", guests: 4, price: "$399", image: "/images/room4.avif" },
+        { name: "Prestige Suite", size: "200m²", view: "Great Mountain View", guests: 6, price: "$599", image: "/images/room5.avif" },
+        {  name: "Junior Deluxe Suite", size: "90m²", view: "Village View", guests: 4, price: "$449", image: "/images/room6.avif" },
+        { name: "Grand Deluxe Suite", size: "120m²", view: "Panoramic Mountain View", guests: 5, price: "$699", image: "/images/room7.avif" }
     ];
 
     const [slidesToShow, setSlidesToShow] = useState(3);
@@ -61,11 +61,11 @@ const Stays = () => {
                 <div className="relative z-10 text-center px-4 sm:px-6 md:px-12 w-full max-w-6xl mx-auto">
                     <h5 className="text-xs sm:text-sm sm:mb-4 drop-shadow-md text-[#ba9d75] font-medium mt-15 mb-10">ENJOY YOUR STAY</h5>
                     <h3 className="text-2xl sm:text-3xl md:text-5xl font-semibold leading-snug mb-4 sm:mb-10">SPEND YOUR COMFORTABLE HOLIDAY</h3>
-                    <h3 className="text-lg sm:text-md md:text-lg font-semibold leading-snug mb-8 sm:mb-10">
+                    <h1 className="text-lg sm:text-md md:text-lg font-semibold leading-snug mb-8 sm:mb-10">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.<br />
                         Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
-                    </h3>
-                    <button className="bg-transparent text-white border border-[#ba9d75] w-64 font-semibold py-3 px-6 hover:bg-[#ab916c] transition-colors cursor-pointer mt-4 mb-12">
+                    </h1>
+                    <button id="explore1" className="bg-transparent text-white border border-[#ba9d75] w-64 font-semibold py-3 px-6 hover:bg-[#ab916c] transition-colors cursor-pointer mt-4 mb-12">
                         Explore Accommodation
                     </button>
                 </div>
@@ -99,18 +99,19 @@ const Stays = () => {
                                         />
 
                                         {/* Green overlay on hover */}
-                                        <div className="absolute inset-0 hover:bg-[#4c5947]/80 "></div>
+                                        <div className="absolute inset-0 hover:bg-[#4c5947]/80  ">
 
                                         {/* Content */}
                                         <div className="absolute inset-0 bg-black/40 flex flex-col justify-between p-4 pointer-events-none">
-                                            <div className="text-center text-black font-semibold text-lg bg-white px-1 py-1 w-20">
+                                            <h1 className="text-center text-black   bg-white px-1 py-1 w-20">
                                                 {suite.price}
-                                            </div>
+                                            </h1>
                                             <div className="text-left text-white mb-6">
-                                                <h4 className="text-3xl font-semibold">{suite.name}</h4>
-                                                <p className="text-sm">{suite.size} / {suite.view} / {suite.guests} Guests</p>
+                                                <h3 className="text-3xl ">{suite.name}</h3>
+                                                <h1 className="text-sm">{suite.size} / {suite.view} / {suite.guests} Guests</h1>
                                             </div>
                                         </div>
+                                    </div>
                                     </div>
                                 </div>
                             ))}

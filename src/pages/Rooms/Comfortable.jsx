@@ -28,23 +28,23 @@ const Comfortable = () => {
           {/* Left Side - Text Content */}
           <div className="space-y-8">
             <div>
-              <h1 className="text-left text-md md:text-md font-light mb-6 text-[#ba9d75] mt-10">
+              <h5 className="text-left text-md md:text-md font-light mb-6 text-[#ba9d75] mt-10">
                 COMFORTABLE STAY EXPERIENCE
-              </h1>
+              </h5>
 
-              <h2 className=" text-left text-3xl md:text-4xl font-light mb-4">
+              <h3 className=" text-left text-3xl md:text-4xl font-light mb-4">
                 MOST POPULAR FACILITIES
-              </h2>
+              </h3>
 
-              <p className="text-left leading-relaxed mb-8 text-gray-200">
+              <h1 className="text-left leading-relaxed mb-8 text-gray-200">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
                 Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              </p>
+              </h1>
 
               {/* More About Services Button */}
               <div className="flex justify-start">
-                <button className="text-lg font-light inline-flex items-center group">
-                  <span className="border-b-2 border-[#ba9d75] group-hover:border-transparent transition-all">
+                <button  className="text-lg font-light inline-flex items-center group">
+                  <span id="services2" className="border-b-2 border-[#ba9d75] group-hover:border-transparent transition-all">
                     More About Services
                   </span>
                   

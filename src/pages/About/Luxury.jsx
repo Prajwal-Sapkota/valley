@@ -18,9 +18,9 @@ const Luxury = () => {
           masterpiece offering contemporary accommodations<br />
           with unrivalled ski and hiking trails.
         </h3>
-        <h5 className="text-md sm:text-md md:text-lg font-light text-[#1b1c1b] mx-auto leading-relaxed">
+        <h1 className="text-md sm:text-md md:text-lg font-light text-[#1b1c1b] mx-auto leading-relaxed">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Aenean commodo ligula eget dolor. <br /> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-        </h5>
+        </h1>
       </div>
 
       <div className="relative w-full py-8">

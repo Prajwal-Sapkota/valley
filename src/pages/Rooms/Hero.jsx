@@ -60,9 +60,9 @@ const Hero = () => {
                         ROOMS & SUITES
                     </h3>
 
-                    <p className="text-md md:text-lg lg:text-2xl font-light tracking-wide text-white mt-4">
+                    <h1 className="text-md md:text-lg lg:text-2xl font-light tracking-wide text-white mt-4">
                         Warmth. Care. Peace.
-                    </p>
+                    </h1>
                 </div>
             </div>
 

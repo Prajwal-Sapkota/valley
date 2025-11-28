@@ -15,7 +15,7 @@ const Journey = () => {
             <div className="text-center mb-10 sm:mb-12 max-w-3xl mx-auto">
                 <h5 className="text-sm sm:text-md font-bold text-[#bda17b] mb-10">ENJOY YOUR WELLNESS</h5>
                 <h3 className="text-3xl sm:text-3xl lg:text-4xl font-semibold text-white mb-6 uppercase">Everything you need to bring energy, body and spirit into balance</h3>
-                <p className="text-md sm:text-md font-bold text-white mb-10">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
+                <h1 className="text-md sm:text-md font-bold text-white mb-10">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </h1>
             </div>
 
             <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mt-6">
@@ -35,12 +35,12 @@ const Journey = () => {
 
 
                         <div className="absolute bottom-2 w-full flex flex-col items-center text-center text-white">
-                            <p className="text-3xl sm:text-xl md:text-6xl font-light tracking-wider mb-5 text-[#ba9d75]">
+                            <h1 className="text-3xl sm:text-xl md:text-6xl font-light tracking-wider mb-5 text-[#ba9d75]">
                                 {activity.icon}
-                            </p>
-                            <h2 className="text-xl sm:text-xl md:text-2xl font-light mb-10">
+                            </h1>
+                            <h3 className="text-xl sm:text-xl md:text-2xl font-light mb-10">
                                 {activity.title}
-                            </h2>
+                            </h3>
                         </div>
                     </div>
                 ))}

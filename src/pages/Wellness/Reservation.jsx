@@ -19,16 +19,16 @@ export default function Reservation() {
                         <h3 className="text-left text-4xl md:text-5xl font-light text-[#1b1c1b] mb-10 uppercase">
                             Wellness At CozyStay
                         </h3>
-                        <p className="text-left text-sm md:text-lg font-light">Get away from the hustle and bustle of everyday life and find total relaxation at our resort. Access to a wellness center of over 3,000 square meters including spa, sauna, swimming pool, gym, yoga and pilates classes and more. You’ll find everything you need, from a dedicated fitness studio to an extensive range of fitness equipment. All carefully planned to help you achieve a balance of energy, body and mind. </p>
+                        <h1 className="text-left text-sm md:text-lg font-light">Get away from the hustle and bustle of everyday life and find total relaxation at our resort. Access to a wellness center of over 3,000 square meters including spa, sauna, swimming pool, gym, yoga and pilates classes and more. You’ll find everything you need, from a dedicated fitness studio to an extensive range of fitness equipment. All carefully planned to help you achieve a balance of energy, body and mind. </h1>
                         <div className="flex items-start gap-6">
                             <MdCall className="text-5xl text-[#ba9d75] mt-1" />
                             <div className="space-y-2">
-                                <p className=" text-left text-sm font-medium text-[#ba9d75] uppercase tracking-widest">
+                                <h1 className=" text-left text-sm font-medium text-[#ba9d75] uppercase tracking-widest">
                                     RESERVATION BY PHONE
-                                </p>
+                                </h1>
                                 <a
                                     href="tel:+41223456677"
-                                    className=" text-left text-2xl sm:text-3xl font-light text-black hover:text-[#ba9d75] transition-colors duration-300"
+                                    className=" text-left text-2xl sm:text-3xl font-light text-black hover:text-[#ba9d75] transition-colors duration-300 number"
                                 >
                                     +41 22 345 66 77
                                 </a>

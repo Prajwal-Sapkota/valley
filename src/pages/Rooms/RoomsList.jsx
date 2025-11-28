@@ -83,13 +83,13 @@ const RoomsList = () => {
                 {/* Intro Content */}
                 <div className="max-w-5xl text-center mb-12 mx-auto">
                     <h2 className="text-md md:text-md font-semibold mb-4 text-[#ba9d75]">Comfortable Rooms & Space</h2>
-                    <p className="text-3xl md:text-4xl lg:text-5xl text-gray-700 mb-4">
+                    <h3 className="text-3xl md:text-4xl lg:text-5xl text-gray-700 mb-4">
                         Explore our refined accommodation options and find the perfect space for your stay.
-                    </p>
-                    <p className="text-md text-gray-600 mb-4">
+                    </h3>
+                    <h1 className="text-md text-gray-600 mb-4">
                         All rooms have a bathroom with bathtub and/or shower, cable television/radio, free WIFI and mini bar. In addition, all rooms are equipped with a Nespresso coffee machine. Most rooms are carpeted, some have parquet flooring.
-                    </p>
-                    <div className="flex justify-center items-center  font-light text-[#ba9d75] text-lg gap-15">
+                    </h1>
+                    <div id="time1" className="flex justify-center items-center  font-light text-[#ba9d75] text-lg gap-15">
                         <div className="flex items-center gap-2">
                             <FaClock />
                             <strong>Check In:</strong> 3:00 PM
@@ -144,10 +144,10 @@ const RoomsList = () => {
                                     </div>
                                 </div>
 
-                                <p className="text-left text-gray-700 text-md">{room.description}</p>
+                                <h1 className="text-left text-gray-700 text-md">{room.description}</h1>
 
                                 <div className="mt-3 flex justify-start mb-10"> {/* Changed to flex justify-start */}
-                                    <button className="text-lg text-black font-light inline-flex items-center group">
+                                    <button id="discover" className="text-lg text-black font-light inline-flex items-center group">
                                         <span className="border-b-2 border-[#ba9d75] group-hover:border-transparent transition-all">
                                             Discover More
                                         </span>
