@@ -33,7 +33,7 @@ const Navigation = () => {
             {/* Top Info Bar */}
             <div className="hidden lg:block bg-transparent border-b border-white/20 py-5 w-full">
                 <div className="flex justify-between text-sm text-white px-8 ml-24" style={{ fontWeight: 500 }}>
-                    <span >POKHARA, NEPAL</span>
+                    <span >LAKESIDE, POKHARA, NEPAL</span>
                     <div className="flex space-x-6 mr-24">
                         <span>TEL: +977-9800000000</span>
                         <span>FAX: +41 22 345 6</span>
