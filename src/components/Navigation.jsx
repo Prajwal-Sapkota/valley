@@ -36,7 +36,7 @@ const Navigation = () => {
                     <span >LAKESIDE, POKHARA, NEPAL</span>
                     <div className="flex space-x-6 mr-24">
                         <span>TEL: +977-9800000000</span>
-                        <span>FAX: +41 22 345 6</span>
+                        <span> +977-9800000000</span>
                         <span>booking@moonlit.com</span>
                     </div>
                 </div>
