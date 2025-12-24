@@ -1,14 +1,15 @@
 import React, { useState, useEffect, useRef } from "react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const Luxury = () => {
   const slides = [
-    { image: "/images/heroimg.avif", alt: "Mountain landscape" },
-    { image: "/images/heroimg2.avif", alt: "Swiss Alps" },
-    { image: "/images/heroimg3.avif", alt: "Luxury resort" },
-    { image: "/images/heroimg4.avif", alt: "Mountain landscape" },
-    { image: "/images/res1.avif", alt: "Swiss Alps" },
-    { image: "/images/res4.avif", alt: "Luxury resort" },
-    { image: "/images/res5.avif", alt: "Luxury resort" },
+    { image: "/images/luxury4.avif", alt: "Luxury 4" },
+    { image: "/images/luxury5.avif", alt: "Luxury 5" },
+    { image: "/images/luxury6.avif", alt: "Luxury 6" },
+    { image: "/images/luxury8.avif", alt: "Luxury 8" },
+    { image: "/images/luxury1.avif", alt: "Luxury 1" },
+    { image: "/images/luxury2.avif", alt: "Luxury 2" },
+    { image: "/images/luxury3.avif", alt: "Luxury 3" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(slides.length); // start at first real slide
@@ -67,13 +68,11 @@ const Luxury = () => {
   return (
     <div className="w-full bg-white">
       <div className="py-12 px-4 sm:px-12 text-center">
-        <span className="text-sm sm:text-md font-medium tracking-wider text-[#ba9d75] ">
-           HERITAGE MEETS MODERN LUXURY
+        <span className="text-md sm:text-lg font-medium tracking-wider text-[#ba9d75] uppercase ">
+          Welcome to Moonlit Resort
         </span>
-        <h3 className="text-2xl sm:text-3xl md:text-4xl font-normal text-[#1b1c1b] mx-auto leading-relaxed py-4 ">
-          Moonlit in the heart of the mountains is an architectural<br />
-          masterpiece offering contemporary accommodations<br />
-          with unrivalled ski and hiking trails.
+        <h3 className="text-2xl sm:text-3xl md:text-4xl max-w-6xl font-normal text-[#1b1c1b] mx-auto leading-relaxed py-4 ">
+          Moonlit Resort is a refined luxury retreat designed for leisure travelers, destination weddings, wellness seekers, and premium events. Surrounded by lush greenery, with the Rapti River nearby and the tranquil Kerung Stream adjacent.
         </h3>
       </div>
 
@@ -107,15 +106,22 @@ const Luxury = () => {
             {/* Navigation Buttons */}
             <button
               onClick={prevSlide}
-              className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white text-gray-800 p-2 sm:p-3 rounded-full shadow-lg transition-all duration-300 w-12 h-12 cursor-pointer z-20"
+              className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2
+             bg-white/80 hover:bg-white text-gray-800
+             p-3 rounded-full shadow-lg transition-all
+             w-12 h-12 flex items-center justify-center z-20"
             >
-              ‹
+              <FaChevronLeft className="text-xl sm:text-2xl" />
             </button>
+
             <button
               onClick={nextSlide}
-              className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white text-gray-800 p-2 sm:p-3 rounded-full shadow-lg transition-all duration-300 w-12 h-12 cursor-pointer z-20"
+              className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2
+             bg-white/80 hover:bg-white text-gray-800
+             p-3 rounded-full shadow-lg transition-all
+             w-12 h-12 flex items-center justify-center z-20"
             >
-              ›
+              <FaChevronRight className="text-xl sm:text-2xl" />
             </button>
           </div>
         </div>

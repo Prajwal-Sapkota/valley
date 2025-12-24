@@ -9,7 +9,7 @@ const DropHome = () => {
     ];
 
     return (
-        <div className="w-full bg-black py-14 ">
+        <div className="w-full bg-black py-14  border-y border-emerald-700/50 ">
             <div className="w-full">
                 <div className="grid grid-cols-1 lg:grid-cols-4 gap-12 max-w-7xl mx-auto px-10">
                     {homeOptions.map((option) => (

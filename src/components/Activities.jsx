@@ -5,41 +5,41 @@ const Activities = () => {
     const activities = [
         {
             id: 1,
-            title: "Spa & Wellness",
-            description: "In the hotel spa center we offer an exceptional well-being experience combining our expertise, high technology and breathtaking results.",
-            image: "/images/spa.avif",
+            title: "Wellness Sanctuary",
+            description: "Rejuvenate your body, mind, and soul at our renowned wellness facilities, thoughtfully designed for complete relaxation. Perfect for wellness tourism guests, retreat groups, and individual travelers seeking restoration.",
+            image: "/images/wellness.avif",
             link: "#"
         },
         {
             id: 2,
-            title: "Summer Week",
-            description: "The Swiss Alps are spectacular in summer, offering some of the best scenery in the world for hiking, biking, rafting and epic drives.",
-            image: "/images/res1.avif",
+            title: "Jungle Adventures",
+            description: "Located close to Chitwan National Park, guests can enjoy unforgettable adventures including Elephant Ride, Jeep Safari, Canoeing, Jungle Walk, and Village Tour. Experience the wilderness up close.",
+            image: "/images/jungleadventure.avif",
             link: "#"
         },
         {
             id: 3,
-            title: "5-Star Gastronomic",
-            description: "Extraordinary moments and special occasions are precious. Enjoy a premium suite and dinner for two as well as spa credits with this special offer.",
-            image: "/images/res2.avif",
+            title: "Cultural Experience",
+            description: "Experience the rich heritage of the region with our Tharu Cultural Dance Show, hosted every alternate day exclusively for our guests. Discover local traditions and authentic Nepali warmth.",
+            image: "/images/cultural.jpg",
             link: "#"
         }
     ];
 
     return (
-        <section className="bg-white py-16 px-4">
+        <section className="bg-white py-12 px-4">
             <div className="max-w-7xl mx-auto ">
                 
-                <div className="text-center py-12">
-                    <span className="text-sm md:text-md font-medium text-[#ba9d75]  tracking-widest">
-                        LOCAL ACTIVITIES & EVENTS
+                <div className="text-center ">
+                    <span className="text-md md:text-lg font-medium text-[#ba9d75]  tracking-widest">
+                        JUNGLE EXPERIENCES & WELLNESS
                     </span>
-                    <h3 className="text-3xl md:text-4xl lg:text-5xl text-[#1b1c1b] max-w-3xl mx-auto leading-snug fony-normal py-4">
-                        IMMERSE YOURSELF IN A DIVERSE MOUNTAIN RESORT LIFE
+                    <h3 className="text-3xl md:text-4xl lg:text-5xl text-[#1b1c1b] max-w-3xl mx-auto leading-snug font-normal py-4">
+                        IMMERSE YOURSELF IN MOONLIT RESORT LIFE
                     </h3>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 py-8">
                     {activities.map((activity, index) => {
                         
                         const staggerClass =
@@ -75,7 +75,7 @@ const Activities = () => {
                                         href={activity.link}
                                         className="inline-flex items-center gap-2 text-[#1b1c1b] font-normal hover:text-[#ba9d75] transition-colors duration-300 cursor-pointer"
                                     >
-                                        Discover More
+                                        Discover Experience
                                         <FaArrowRight />
                                     </button>
                                 </div>

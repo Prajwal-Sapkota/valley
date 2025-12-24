@@ -1,49 +1,48 @@
 export default function DropPlay() {
 
   return (
-    <div className="w-full bg-black py-10">
+    <div className="w-full bg-black py-10 border-y border-emerald-700/50">
       <div className="max-w-7xl mx-auto px-8 text-white">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 ">
           
           <div className="grid grid-cols-2 gap-8 h-fit px-2">
             
             <div className="space-y-6 text-left">
-              <span className="text-md font-semibold ">LOCAL ACTIVITIES</span>
+              <span className="text-md font-semibold ">JUNGLE EXPERIENCES</span>
               <div  className="space-y-2 text-sm py-4 ">
                 <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Overview</a>
-                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Winter Activities</a>
-                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Summer Activities</a>
+                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Chitwan Park Adventures</a>
+                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Cultural Activities</a>
               </div>
             </div>
 
             <div className="space-y-2 text-left">
-              <span className="text-md font-semibold mb-4">SUMMER ACTIVITIES</span>
+              <span className="text-md font-semibold mb-4">JUNGLE ADVENTURES</span>
               <div  className="space-y-2 text-sm py-4">
-                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Hiking</a>
-                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Running & Walking</a>
-                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Mountain Bike</a>
-                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Racing Bike</a>
-                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Golf Courses</a>
+                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Elephant Ride</a>
+                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Jeep Safari</a>
+                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Canoeing</a>
+                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Jungle Walk</a>
+                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Village Tour</a>
               </div>
             </div>
 
             <div className="space-y-2 text-left">
-              <span className="text-md font-semibold mb-4">WINTER ACTIVITIES</span>
+              <span className="text-md font-semibold mb-4">WELLNESS & SPA</span>
               <div  className="space-y-2 text-sm py-4 ">
-                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Ski & Snowboard</a>
-                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Freeriding</a>
-                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Winter Hiking</a>
-                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Snowshoeing</a>
-                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Paraglider Exercises</a>
-                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Sledding</a>
+                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Luxury Spa Treatments</a>
+                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Steam & Sauna</a>
+                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Jacuzzi</a>
+                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Ice Bath Therapy</a>
+                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Yoga & Meditation</a>
               </div>
             </div>
 
             <div className="space-y-2 text-left">
-              <span className="text-md font-semibold mb-4 mt-6">OTHERS</span>
+              <span className="text-md font-semibold mb-4 mt-6">EVENTS</span>
               <div  className="space-y-2 text-sm py-4 ">
-                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Art & Museum</a>
-                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Music</a>
+                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Destination Weddings</a>
+                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">MICE Events</a>
               </div>
             </div>
 
@@ -55,8 +54,8 @@ export default function DropPlay() {
               <div className="group cursor-pointer">
                 <div className="relative overflow-hidden h-96 mb-4">
                   <img
-                    src="/images/mountain.avif"
-                    alt="Winter Activities"
+                    src="/images/chitwan.avif"
+                    alt="Chitwan National Park Safari"
                     className="w-96 h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/30"></div>
@@ -64,9 +63,9 @@ export default function DropPlay() {
                   <div className="absolute inset-0 flex flex-col justify-end p-6 text-left">
                     <span className="text-md text-white">Adventure</span>
 
-                    <a className="text-xl  text-white">WINTER ACTIVITIES</a>
+                    <a className="text-xl  text-white">CHITWAN SAFARI</a>
                     <div className="space-y-1 text-white/90">
-                      <span className="text-sm">Aenean commodo ligula eget dolor.</span>
+                      <span className="text-sm">Elephant rides, jeep safaris & jungle walks in Chitwan National Park.</span>
                     </div>
                   </div>
                 </div>
@@ -75,18 +74,18 @@ export default function DropPlay() {
               <div className="group cursor-pointer">
                 <div className="relative overflow-hidden h-96 mb-4">
                   <img
-                    src="/images/lakeview.avif"
-                    alt="Summer Activities"
+                    src="/images/cultural.jpg"
+                    alt="Tharu Cultural Experience"
                     className="w-96 h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/50 transition-opacity duration-300 group-hover:bg-black/30"></div>
 
                   <div className="absolute inset-0 flex flex-col justify-end p-6 text-left">
-                    <span className="text-md  text-white">Nature & Wild</span>
+                    <span className="text-md  text-white">Cultural</span>
 
-                    <a className="text-xl  text-white">SUMMER ACTIVITIES</a>
+                    <a className="text-xl  text-white">THARU CULTURE</a>
                     <div className="space-y-1 text-white/90">
-                      <span className="text-sm">Aenean commodo ligula eget dolor.</span>
+                      <span className="text-sm">Traditional Tharu dance shows & local heritage experiences.</span>
                     </div>
                   </div>
                 </div>

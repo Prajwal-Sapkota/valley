@@ -14,7 +14,7 @@ const Navigation = () => {
         { label: 'HOME', link: '/', hasDropdown: true },
         { label: 'STAY', link: '/rooms', hasDropdown: true },
         { label: 'DINE', link: '/restaurant', hasDropdown: true },
-        { label: 'PLAY', link: '/activities', hasDropdown: true },
+        { label: 'EXPLORE', link: '/activities', hasDropdown: true },
         { label: 'RELAX', link: '/wellness', hasDropdown: false },
     ];
 
@@ -22,7 +22,7 @@ const Navigation = () => {
         { label: 'Home', link: '/', hasDropdown: false },
         { label: 'Stay', link: '/rooms', hasDropdown: false },
         { label: 'Dine', link: '/restaurant', hasDropdown: true },
-        { label: 'Play', link: '/activities', hasDropdown: true },
+        { label: 'Explore', link: '/activities', hasDropdown: true },
         { label: 'Relax', link: '/wellness', hasDropdown: false },
         { label: 'Pages', hasDropdown: true },
         { label: 'Our Blog', link: '/blog', hasDropdown: false },
@@ -33,11 +33,15 @@ const Navigation = () => {
             {/* Top Info Bar */}
             <div className="hidden lg:block bg-transparent border-b border-white/20 py-5 w-full">
                 <div className="flex justify-between text-sm text-white px-8 ml-24" style={{ fontWeight: 500 }}>
-                    <span >LAKESIDE, POKHARA, NEPAL</span>
+                    <span >Jagatpur, Dhrubaghat, Bharatpur -23, Chitwan</span>
                     <div className="flex space-x-6 mr-24">
-                        <span>TEL: +977-9800000000</span>
-                        <span> +977-9800000000</span>
-                        <span>booking@moonlit.com</span>
+                        <a href="tel:+9779804161233" className="hover:text-[#bfa682]">
+                            Tel: +977 9804161233
+                        </a>
+
+                        <a href="mailto:moonlitresort8@gmail.com" className="hover:text-[#bfa682]">
+                            moonlitresort8@gmail.com
+                        </a>
                     </div>
                 </div>
             </div>
@@ -58,9 +62,9 @@ const Navigation = () => {
                         {/* Desktop Nav */}
                         <div className="hidden lg:flex items-center space-x-3 ml-17 mt-4">
                             {navItems.map((item) => (
-                                <div  key={item.label} className="relative z-50 group" style={{ fontWeight: 500 }}>
+                                <div key={item.label} className="relative z-50 group" style={{ fontWeight: 500 }}>
                                     <a
-                                        href={item.link} 
+                                        href={item.link}
                                         className="flex items-center text-white px-3 py-2 text-sm font-medium relative transition-colors cursor-pointer"
                                         onMouseEnter={() => item.hasDropdown && setActiveDropdown(item.label)}
                                     >
@@ -85,7 +89,7 @@ const Navigation = () => {
                         {/* Right-side Desktop Nav */}
                         <div className="hidden lg:flex items-center space-x-4 z-50 mt-4 mr-20">
                             {/* Pages Dropdown */}
-                            <div  className="relative group">
+                            <div className="relative group">
                                 <a
 
                                     className="flex items-center text-white px-3 py-2 text-sm font-medium relative cursor-pointer nav"
@@ -121,7 +125,7 @@ const Navigation = () => {
 
                             {/* Reserve Button */}
                             <button
-                                
+
                                 className="bg-transparent border border-white text-white px-6 py-2 text-sm hover:bg-white hover:text-black transition-all group relative cursor-pointer reserve"
                             >
                                 Reserve Now
@@ -188,7 +192,7 @@ const Navigation = () => {
                                                         <a href="/play/entertainment" className="block py-2 text-white/80 text-sm hover:text-white cursor-pointer">Entertainment</a>
                                                     </>
                                                 )}
-                                                
+
                                                 {item.label === 'Pages' && (
                                                     <>
                                                         <a href='/about' className="block py-2 text-white/80 text-sm hover:text-white cursor-pointer">About Us</a>
@@ -204,22 +208,34 @@ const Navigation = () => {
                             </div>
 
                             {/* Footer */}
-                            <div className="p-6 border-t border-white/20">
-                                <div className="mb-6">
-                                    <h3 className="font-semibold text-white mb-3">MOONLITE RESORT</h3>
-                                    <p className="text-white/80 text-sm mb-4 leading-relaxed">
-                                        Lakeside,<br />
-                                        Pokahara,<br />
-                                        Nepal
+                            <div className="p-4 border-t border-white/20">
+                                <div className="py-6">
+                                    <h3 className="text-xl font-semibold text-white mb-3">MOONLIT RESORT</h3>
+                                    <p className="text-white/80 text-md mb-4 leading-relaxed">
+                                        Jagatpur, Dhrubaghat,
+                                        Bharatpur -23, Chitwan<br />
+
                                     </p>
                                     <a href="/map" className="flex items-center justify-center text-white font-medium text-sm hover:text-white/80 transition-colors cursor-pointer">
                                         <FaMapMarkerAlt className="h-4 w-4 mr-2" /> VIEW ON MAP
                                     </a>
                                 </div>
 
-                                <div className="mb-6">
-                                    <p className="text-white/80 text-sm">+977-9800000000</p>
-                                    <p className="text-white/80 text-sm">info@moonlit.com</p>
+                                <div className='py-4'>
+                                    <span className='text-lg '>Contact:</span>
+                                    <a
+                                        href="tel:+9779804161233"
+                                        className="block text-white/80 text-md hover:text-white transition"
+                                    >
+                                        +977 9804161233
+                                    </a>
+
+                                    <a
+                                        href="mailto:moonlitresort8@gmail.com"
+                                        className="block text-white/80 text-md hover:text-white transition"
+                                    >
+                                        moonlitresort8@gmail.com
+                                    </a>
                                 </div>
 
                                 <div className="pt-4 border-t border-white/20">
@@ -233,7 +249,7 @@ const Navigation = () => {
                 )}
 
                 {/* Dropdowns for desktop */}
-                {activeDropdown && ['HOME', 'STAY', 'DINE', 'PLAY'].includes(activeDropdown) && (
+                {activeDropdown && ['HOME', 'STAY', 'DINE', 'EXPLORE'].includes(activeDropdown) && (
                     <div className="absolute top-full left-0 w-full hidden lg:block" style={{ pointerEvents: 'none' }}>
                         <div style={{ pointerEvents: 'auto' }}
                             onMouseEnter={() => setActiveDropdown(activeDropdown)}
@@ -242,7 +258,7 @@ const Navigation = () => {
                             {activeDropdown === 'HOME' && <DropHome />}
                             {activeDropdown === 'STAY' && <DropStay />}
                             {activeDropdown === 'DINE' && <DropDine />}
-                            {activeDropdown === 'PLAY' && <DropPlay />}
+                            {activeDropdown === 'EXPLORE' && <DropPlay />}
                         </div>
                     </div>
                 )}

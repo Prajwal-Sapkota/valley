@@ -1,21 +1,21 @@
 import React from "react";
 
 const activities = [
-    { id: 1, title: "Winter Hiking", image: "/images/res1.avif", category: "OUTDOORS" },
-    { id: 2, title: "Golf Courses", image: "/images/res2.avif", category: "OUTDOORS" },
-    { id: 3, title: "Paraglider Exercises", image: "/images/res3.avif", category: "OUTDOORS" },
-    { id: 4, title: "Ski & Snowshoeing", image: "/images/res4.avif", category: "OUTDOORS" },
+    { id: 1, title: "Elephant Ride", image: "/images/elephantride.avif", category: "JUNGLE EXPERIENCE" },
+    { id: 2, title: "Jeep Safari", image: "/images/jeepsafari.avif", category: "ADVENTURE" },
+    { id: 3, title: "Canoeing", image: "/images/canoeing.avif", category: "WATER ACTIVITY" },
+    { id: 4, title: "Jungle Walk", image: "/images/junglewalk.avif", category: "NATURE EXPLORATION" },
 ];
 
 const Holiday = () => {
     return (
         <div className="min-h-screen bg-white py-12 sm:py-16 px-4">
             <div className="text-center  max-w-3xl mx-auto">
-                <span className="text-sm sm:text-md font-medium text-[#bda17b]">ENJOY ULTIMATE ALPINE EXPERIENCES</span>
-                <h3 className="text-4xl sm:text-4xl lg:text-6xl font-normal text-[#1b1c1b] py-10">YOUR HOLIDAY PARADISE</h3>
+                <span className="text-md sm:text-lg font-medium text-[#bda17b]">EXPERIENCE THE WILDERNESS</span>
+                <h3 className="text-3xl sm:text-4xl lg:text-5xl font-normal text-[#1b1c1b] py-4">JUNGLE ADVENTURES</h3>
             </div>
 
-            <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 py-12">
                 {activities.map((activity, index) => (
                     <div
                         key={activity.id}

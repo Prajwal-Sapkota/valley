@@ -2,15 +2,15 @@ import React from 'react';
 
 const DropDine = () => {
     const diningOptions = [
-        { id: 1, title: "Fine Dining Restaurant", image: "/images/res1.avif" },
-        { id: 2, title: "Bar & Lounge", image: "/images/res2.avif" },
-        { id: 3, title: "Room Service", image: "/images/res3.avif" },
-        { id: 4, title: "Coffee Shop", image: "/images/res4.avif" }
+        { id: 1, title: "All Day Dining Restaurant", image: "/images/res1.avif" },
+        { id: 2, title: "Pool Bar", image: "/images/res2.avif" },
+        { id: 3, title: "Local Specialties", image: "/images/res3.avif" },
+        { id: 4, title: "International Cuisine", image: "/images/res4.avif" }
     ];
 
     return (
         <div 
-            className="w-full bg-black py-8 "
+            className="w-full bg-black py-8 border-y border-emerald-700/50  "
             onMouseEnter={(e) => e.stopPropagation()} // Prevent event bubbling
         >
             <div className="w-full">

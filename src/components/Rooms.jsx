@@ -5,35 +5,35 @@ const RoomsSlider = () => {
     const accommodations = [
         {
             id: 1,
-            name: "Signature Suite",
-            price: "$399",
-            size: "60 m²",
-            guests: "4 Guests",
-            beds: "2 Beds",
+            name: "Deluxe Room with Garden View",
+            price: "$299",
+            size: "45 m²",
+            guests: "2 Guests",
+            beds: "1 King Bed",
             bathroom: "1 Bathroom",
-            image: "/images/room1.avif",
+            image: "/images/deluxe.jpeg",
             link: "#"
         },
         {
             id: 2,
-            name: "Deluxe Room",
-            price: "$299",
-            size: "45 m²",
-            guests: "2 Guests",
-            beds: "1 Bed",
+            name: "River View Suite",
+            price: "$399",
+            size: "60 m²",
+            guests: "4 Guests",
+            beds: "2 Double Beds",
             bathroom: "1 Bathroom",
-            image: "/images/room2.avif",
+            image: "/images/riverview.jpeg",
             link: "#"
         },
         {
             id: 3,
-            name: "Mountain Villa",
+            name: "Kerung Stream Villa",
             price: "$599",
             size: "85 m²",
             guests: "6 Guests",
             beds: "3 Beds",
             bathroom: "2 Bathrooms",
-            image: "/images/room3.avif",
+            image: "/images/kerung.jpeg",
             link: "#"
         }
     ];
@@ -47,23 +47,22 @@ const RoomsSlider = () => {
     return (
         <div className="bg-[#f2ece4] py-12 px-4">
             <div className="max-w-7xl mx-auto ">
-                <div className="flex flex-col md:flex-row justify-between items-start py-20">
-                    <div className=" text-left mb-4 md:mb-0">
-                        <span className=" text-sm md:text-md font-medium text-[#ba9d75] ">
-                            DISCOVER OUR ACCOMMODATIONS
+                <div className="flex flex-col md:flex-row justify-between items-start py-8 md:py-20">
+                    <div className="text-left mb-4 md:mb-0">
+                        <span className="text-md md:text-lg font-medium text-[#ba9d75] block mb-2">
+                            DISCOVER OUR LUXURY ACCOMMODATIONS
                         </span>
-                        <h3 className=" text-3xl md:text-4xl lg:text-5xl text-[#1b1c1b] py-6 font-normal">
-                            ROOMS. SUITES. VILLAS
+                        <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#1b1c1b] font-normal">
+                            80 ELEGANT ROOMS & SUITES
                         </h3>
                     </div>
-                    <div>
-                        <button className="inline-flex items-center gap-2 hover:text-[#ba9d75] text-[#1b1c1b] font-normmal py-2 px-4 md:py-3 md:px-6 transition-colors duration-300 text-2xl sm:text-lg md:text-3xl mt-12 cursor-pointer">
-                            Explore All Accommodations
-                            <FaArrowRight size={14} />
+                    <div className="mt-6 ">
+                        <button className="inline-flex items-center gap-2 hover:text-[#ba9d75] text-[#1b1c1b] font-normal py-2 px-4 md:py-3 md:px-6 transition-colors duration-300 text-base sm:text-lg md:text-xl lg:text-3xl cursor-pointer">
+                            View All 80 Rooms
+                            <FaArrowRight size={14} className="md:size-4" />
                         </button>
                     </div>
                 </div>
-
                 <div className="relative overflow-hidden shadow-lg mb-8">
                     <button
                         onClick={prevSlide}
@@ -90,8 +89,8 @@ const RoomsSlider = () => {
                                     className="w-full h-full object-cover"
                                 />
                                 <div className="absolute inset-0 bg-black/40"></div>
-                                <span  className="absolute top-2 left-2 md:top-4 md:left-4 bg-[#67593f] text-white font-normal py-1 px-3 md:py-2 md:px-4 border border-[#ba9d75] text-sm md:text-base">
-                                    FROM {room.price}
+                                <span className="absolute top-2 left-2 md:top-4 md:left-4 bg-[#67593f] text-white font-normal py-1 px-3 md:py-2 md:px-4 border border-[#ba9d75] text-sm md:text-base">
+                                    FROM {room.price}/NIGHT
                                 </span>
 
                                 <div className="absolute inset-0 flex flex-col justify-center items-center p-4 md:p-10 text-white text-center space-y-2 md:space-y-4 font-normal">

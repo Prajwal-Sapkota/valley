@@ -21,10 +21,9 @@ const Footer = () => {
 
                     {/* LEFT */}
                     <div className="text-left">
-                        <h3 className="text-3xl font-normal text-white mb-6">MOONLIT</h3>
+                        <h3 className="text-2xl md:text-3xl font-normal text-white mb-6">Moonlit Resort Pvt. Ltd.</h3>
                         <p className="text-gray-300 text-md leading-relaxed font-normal">
-                            Established in 1998, Moonlit Resort offers contemporary accommodation
-                            with serene surroundings and stunning Alpine views.
+                            A luxury jungle resort near Chitwan National Park, offering authentic Nepali warmth with international hospitality standards.
                         </p>
 
                         <div className="flex items-center space-x-4 mt-4 text-3xl text-white">
@@ -41,15 +40,33 @@ const Footer = () => {
                             Reach Out
                         </h3>
 
-                        <ul  className="text-gray-300 space-y-2 text-md font-normal py-2">
-                            <span className="cursor-pointer">Email: booking@moonlit.com</span><br/>
-                            <span className="cursor-pointer">Tel: +977-9800000000, </span>
-                            <span className="cursor-pointer">+977-9800000000</span><br/>
-                            <span className="cursor-pointer">Address: Lakeside, Pokhara, Nepal</span>
+                        <ul className="text-gray-300 space-y-2 text-sm font-normal py-2">
+                            <li>
+                                <a
+                                    href="mailto:moonlitresort8@gmail.com"
+                                    className="cursor-pointer hover:text-white transition"
+                                >
+                                    Email: moonlitresort8@gmail.com
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    href="tel:+9779804161233"
+                                    className="cursor-pointer hover:text-white transition"
+                                >
+                                    Tel: +977 9804161233
+                                </a>
+                            </li>
+
+                            <li >
+                                Address: Jagatpur, Dhrubaghat, Bharatpur -23, Chitwan
+                            </li>
                         </ul>
 
+
                         <button
-                           
+
                             className="py-4 text-white relative inline-block  transition group cursor-pointer font-medium"
                         >
                             GET DIRECTIONS
@@ -77,7 +94,7 @@ const Footer = () => {
                                     />
 
                                     <button
-                                       
+
                                         className="bg-transparent text-white hover:text-yellow-100 px-4 transition flex items-center gap-2 cursor-pointer font-normal"
                                     >
                                         Subscribe
@@ -97,7 +114,7 @@ const Footer = () => {
                             </form>
 
                             {/* SOCIAL ICONS */}
-                            <div  className="mt-8 flex space-x-4">
+                            <div className="mt-8 flex space-x-4">
                                 <span className="text-md font-normal text-white mb-3">Stay Connected:</span>
 
                                 <a href="#" className="w-5 h-5 flex items-center justify-center hover:text-[#D4B68F] transition cursor-pointer">
@@ -131,7 +148,7 @@ const Footer = () => {
                     </div>
 
                     <p className="text-gray-400 text-sm text-center">
-                       © 2025 Moonlit Resort . All rights reserved. Crafted by S.A I.T Solution Nepal
+                        © 2025 Moonlit Resort . All rights reserved. Crafted by S.A I.T Solution Nepal
                     </p>
                 </div>
 
