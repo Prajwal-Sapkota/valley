@@ -1,5 +1,5 @@
 export default function Direction() {
-  const backgroundImageUrl = "/images/contact5.avif";
+  const backgroundImageUrl = "/images/chitwannp.jpg";
 
   return (
     <div>
@@ -11,41 +11,45 @@ export default function Direction() {
 
         {/* Column 1 */}
         <div className="flex flex-col space-y-3 leading-relaxed items-center px-6">
-          <span className="text-md font-medium text-[#ba9d75] uppercase">General Inquiries</span>
-          <h3 className="text-2xl font-normal">Hotel Info Center</h3>
-          <p>Business Hours: Monday – Sunday, 9 am – 5 pm</p>
-          <p>Telephone: +41 22 345 66 77</p>
-          <p>Fax: +41 22 345 77 89</p>
-          <p>Email: info@cozystay.com</p>
-          <button  className="mt-4 font-normal underline decoration-[#ba9d75] underline-offset-8 hover:no-underline transition-all duration-300">
+          <span className="text-md font-medium text-[#55694f] uppercase">General Inquiries</span>
+          <h3 className="text-2xl font-normal">Resort Information</h3>
+          <p>Business Hours: Daily, 24/7 Service Available</p>
+          <p>Telephone: +977 9804161233</p>
+          <p>Email: moonlitresort8@gmail.com</p>
+          <p>Address: Jagatpur, Dhrubaghat, Bharatpur-23, Chitwan</p>
+          <p className="text-sm">Near Chitwan National Park</p>
+          <button className="mt-4 font-normal underline decoration-[#ba9d75] underline-offset-8 hover:no-underline transition-all duration-300">
             Get Directions
           </button>
         </div>
 
         {/* Column 2 */}
         <div className="flex flex-col space-y-3 leading-relaxed items-center px-6">
-          <span className="text-md font-medium text-[#ba9d75] uppercase">Reservation Details</span>
-          <h3 className="text-2xl font-normal">Direct Reservations</h3>
-          <p>Address: Rue de Lausanne, 1202 Genève, Switzerland</p>
-          <p>Telephone: +41 22 345 66 77</p>
-          <p>Fax: +41 22 345 77 89</p>
-          <p>Email: booking@cozystay.com</p>
+          <span className="text-md font-medium text-[#55694f] uppercase">Reservations & Events</span>
+          <h3 className="text-2xl font-normal">Booking & Planning</h3>
+          <p>For Room Reservations & Accommodation</p>
+          <p>For Destination Weddings & Celebrations</p>
+          <p>For Conferences & MICE Events</p>
+          <p>For Wellness Retreats & Packages</p>
+          <p>Email: moonlitresort8@gmail.com</p>
           <button className="py-3 font-normal underline decoration-[#ba9d75] underline-offset-8 hover:no-underline transition-all duration-300">
-            Get Directions
+            Plan Your Visit
           </button>
         </div>
 
       </div>
 
-      {/* Full Cover Image with Gradient */}
-      <div className="relative w-full h-[400px] md:h-[500px]">
+      {/* Full Cover Image with Darker Overlay */}
+      <div className="relative w-full h-[400px] md:h-[550px]">
         <img
           src={backgroundImageUrl}
-          alt="Background"
+          alt="Chitwan National Park Jungle View"
           className="w-full h-full object-cover"
         />
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-transparent to-black/0"></div>
+        {/* Darker Gradient Overlay for Jungle Theme */}
+        <div className="absolute inset-0 bg-black/40"></div>
+        
+       
       </div>
     </div>
   );

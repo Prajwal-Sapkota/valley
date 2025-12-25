@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 
 const statsData = [
-    { value: 64, description: "GUEST ROOMS" },
-    { value: 25, description: "JUNIOR SUITES" },
-    { value: 21, description: "DELUXE SUITES" },
-    { value: 18, description: "APARTMENTS" },
+    { value: 80, description: "ELEGANT ROOMS" },
+    { value: 4800, description: "SQ.FT EVENT HALL" },
+    { value: 500, description: "WEDDING CAPACITY" },
+    { value: 24, description: "HOUR SERVICE" },
+
 ];
 
 export default function Stay() {
@@ -30,17 +31,17 @@ export default function Stay() {
 
     return (
         <section
-            className="relative min-h-[96vh] w-full bg-cover bg-center flex items-center justify-center text-white"
-            style={{ backgroundImage: "url('/images/about.avif')" }}
+            className="relative min-h-[96vh] w-full bg-cover bg-center flex items-center justify-center text-white py-18"
+            style={{ backgroundImage: "url('/images/book.jpeg')" }}
         >
             <div className="absolute inset-0 bg-black/70"></div>
 
             <div className="relative z-10 text-center px-4 sm:px-6 md:px-12 w-full max-w-6xl mx-auto ">
-                <span className="text-xs sm:text-sm mb-2 sm:mb-4 drop-shadow-md text-[#ba9d75] font-medium">
-                    ENJOY YOUR STAY AT THE HOTEL
+                <span className="text-md sm:text-lg drop-shadow-md text-[#ba9d75] font-medium">
+                    EXPERIENCE MOONLIT RESORT
                 </span>
                 <h3 className="text-2xl sm:text-3xl md:text-5xl font-normal leading-snug py-8">
-                    Spend your comfortable holiday in the heart of the beautiful Swiss Alps
+                    Discover luxury accommodation in the heart of Chitwan               
                 </h3>
 
                 <div className="bg-transparent px-4 sm:px-6 py-6 sm:py-8 w-full flex flex-col gap-8 md:flex-row md:items-center justify-between">
@@ -48,7 +49,7 @@ export default function Stay() {
                         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
                             {statsData.map((stat, index) => (
                                 <div key={index} className="text-center">
-                                    <h2  className="text-5xl md:text-7xl font-normal text-white mb-2 drop-shadow-lg">
+                                    <h2 className="text-5xl md:text-7xl font-normal text-white mb-2 drop-shadow-lg">
                                         {counts[index]}
                                     </h2>
                                     <span className="text-sm md:text-sm text-white uppercase drop-shadow-lg font-medium">

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Navigation from '../../components/Navigation';
 
 const Hero = () => {
-    const backgroundImageUrl = "/images/contact.avif";
+    const backgroundImageUrl = "/images/contact.jpeg";
     
     const [animateText, setAnimateText] = useState(false);
 

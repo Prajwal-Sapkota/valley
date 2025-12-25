@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-const Holiday = () => {
+const Adventure = () => {
     const activities = [
         { id: 1, title: "Elephant Ride", image: "/images/elephantride.avif", category: "JUNGLE EXPERIENCE" },
         { id: 2, title: "Jeep Safari", image: "/images/jeepsafari.avif", category: "ADVENTURE" },
         { id: 3, title: "Canoeing", image: "/images/canoeing.avif", category: "WATER ACTIVITY" },
         { id: 4, title: "Jungle Walk", image: "/images/junglewalk.avif", category: "NATURE EXPLORATION" },
         { id: 5, title: "Wellness Sanctuary", image: "/images/wellness.avif", category: "SPA & RELAXATION" },
-        { id: 6, title: "Cultural Experience", image: "/images/cultural.jpg", category: "LOCAL HERITAGE" },
-        { id: 7, title: "Village Tour", image: "/images/village.jpg", category: "CULTURAL" },
-        { id: 8, title: "Tharu Dance Show", image: "/images/tharudance.jpg", category: "ENTERTAINMENT" },
+        { id: 6, title: "Cultural Experience", image: "/images/cultural1.jpg", category: "LOCAL HERITAGE" },
+        { id: 7, title: "Village Tour", image: "/images/village.avif", category: "CULTURAL" },
+        { id: 8, title: "Tharu Dance Show", image: "/images/cultural.jpg", category: "ENTERTAINMENT" },
     ];
 
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -59,13 +59,13 @@ const Holiday = () => {
     };
 
     return (
-        <div className="min-h-screen bg-white py-12 sm:py-16 px-4">
+        <div className="min-h-screen bg-white py-12 sm:py-18 px-4">
             <div className="text-center max-w-3xl mx-auto">
-                <span className="text-md sm:text-lg font-medium text-[#51A687]">EXPERIENCE THE WILDERNESS</span>
-                <h3 className="text-3xl sm:text-4xl lg:text-5xl font-normal text-[#1b1c1b] py-4">JUNGLE ADVENTURES</h3>
+                <span className="text-md sm:text-lg font-medium text-[#55694f]">EXPERIENCE THE WILDERNESS</span>
+                <h3 className="text-4xl md:text-5xl font-normal text-[#1b1c1b] leading-tight py-6">JUNGLE ADVENTURES</h3>
             </div>
 
-            <div className="relative max-w-7xl mx-auto py-12">
+            <div className="relative max-w-7xl mx-auto ">
                 {/* Navigation Buttons */}
                 <button
                     onClick={prevSlide}
@@ -83,7 +83,7 @@ const Holiday = () => {
 
                 {/* Carousel Container */}
                 <div className="overflow-hidden">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 py-12">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 py-6">
                         {getVisibleActivities().map((activity, index) => (
                             <div
                                 key={activity.id}
@@ -92,7 +92,7 @@ const Holiday = () => {
                                 <img
                                     src={activity.image}
                                     alt={activity.title}
-                                    className="w-full h-72 sm:h-80 md:h-120 object-cover group-hover:scale-105 transition-transform duration-500"
+                                    className="w-full h-72 sm:h-80 md:h-120 object-cover group-hover:scale-105 transition-transform duration-600"
                                 />
 
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
@@ -120,4 +120,4 @@ const Holiday = () => {
     );
 };
 
-export default Holiday;
+export default Adventure;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-const Luxury = () => {
+const Welcome = () => {
   const slides = [
     { image: "/images/luxury4.avif", alt: "Luxury 4" },
     { image: "/images/luxury5.avif", alt: "Luxury 5" },
@@ -12,12 +12,11 @@ const Luxury = () => {
     { image: "/images/luxury3.avif", alt: "Luxury 3" },
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(slides.length); // start at first real slide
+  const [currentIndex, setCurrentIndex] = useState(slides.length);
   const [slidesToShow, setSlidesToShow] = useState(3);
   const [isTransitioning, setIsTransitioning] = useState(true);
   const slideRef = useRef(null);
 
-  // Handle responsive slides
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 640) setSlidesToShow(1);
@@ -29,10 +28,8 @@ const Luxury = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Duplicate slides for infinite loop
   const duplicatedSlides = [...slides, ...slides, ...slides];
 
-  // Auto-slide
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
@@ -50,7 +47,6 @@ const Luxury = () => {
     setIsTransitioning(true);
   };
 
-  // Handle transition reset when reaching clones
   useEffect(() => {
     if (currentIndex === 0) {
       setTimeout(() => {
@@ -67,24 +63,28 @@ const Luxury = () => {
 
   return (
     <div className="w-full bg-white">
-      <div className="py-12 px-4 sm:px-12 text-center">
-        <span className="text-md sm:text-lg font-medium tracking-wider text-[#51A687] uppercase ">
+      {/* Text Section */}
+      <div className="py-16 px-4 sm:px-12 text-center">
+        <span className="text-md sm:text-lg font-medium tracking-wider text-[#55694f] uppercase">
           Welcome to Moonlit Resort
         </span>
-        <h3 className="text-2xl sm:text-3xl md:text-4xl max-w-6xl font-normal text-[#1b1c1b] mx-auto leading-relaxed py-4 ">
+
+        <h3 className="text-2xl sm:text-3xl md:text-4xl max-w-6xl font-normal text-[#1b1c1b] mx-auto leading-relaxed pt-4">
           Moonlit Resort is a refined luxury retreat designed for leisure travelers, destination weddings, wellness seekers, and premium events. Surrounded by lush greenery, with the Rapti River nearby and the tranquil Kerung Stream adjacent.
         </h3>
       </div>
 
-      <div className="relative w-full py-8 overflow-hidden">
+      {/* Slider */}
+      <div className="relative w-full overflow-hidden">
         <div className="max-w-8xl mx-auto">
-          {/* Carousel */}
           <div className="relative">
             <div
               className="flex transition-transform duration-500 ease-in-out"
               style={{
                 transform: `translateX(-${(100 / slidesToShow) * currentIndex}%)`,
-                transition: isTransitioning ? "transform 0.5s ease-in-out" : "none",
+                transition: isTransitioning
+                  ? "transform 0.5s ease-in-out"
+                  : "none",
               }}
               ref={slideRef}
             >
@@ -107,9 +107,9 @@ const Luxury = () => {
             <button
               onClick={prevSlide}
               className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2
-             bg-white/80 hover:bg-white text-gray-800
-             p-3 rounded-full shadow-lg transition-all
-             w-12 h-12 flex items-center justify-center z-20"
+              bg-white/80 hover:bg-white text-gray-800
+              p-3 rounded-full shadow-lg transition-all
+              w-12 h-12 flex items-center justify-center z-20"
             >
               <FaChevronLeft className="text-xl sm:text-2xl" />
             </button>
@@ -117,9 +117,9 @@ const Luxury = () => {
             <button
               onClick={nextSlide}
               className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2
-             bg-white/80 hover:bg-white text-gray-800
-             p-3 rounded-full shadow-lg transition-all
-             w-12 h-12 flex items-center justify-center z-20"
+              bg-white/80 hover:bg-white text-gray-800
+              p-3 rounded-full shadow-lg transition-all
+              w-12 h-12 flex items-center justify-center z-20"
             >
               <FaChevronRight className="text-xl sm:text-2xl" />
             </button>
@@ -130,4 +130,4 @@ const Luxury = () => {
   );
 };
 
-export default Luxury;
+export default Welcome;

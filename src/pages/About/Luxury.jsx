@@ -4,62 +4,43 @@ import { FaPlay } from "react-icons/fa";
 const Luxury = () => {
   const [playVideo, setPlayVideo] = useState(false);
 
-  const videoId = "wmYG1a0QvUA"; 
-  const thumbnail = "/images/about.avif"; 
+  const videoId = "wmYG1a0QvUA";
+  const thumbnail = "/images/about.avif";
 
   return (
-    <div className="w-full bg-white">
-      <div className="py-24 px-4 sm:px-12 text-center">
-        <span className="text-sm sm:text-md font-medium tracking-wider text-[#ba9d75] py-4">
-          SWISS HERITAGE MEETS MODERN LUXURY
+    <div className="w-full bg-white py-18">
+      <div className=" px-4 sm:px-12 text-center">
+        <span className="text-md sm:text-lg font-medium tracking-wider text-[#55694f]">
+          JUNGLE LUXURY MEETS AUTHENTIC HOSPITALITY
         </span>
-        <h3 className="text-2xl sm:text-3xl md:text-4xl font-normal text-[#1b1c1b] mx-auto leading-relaxed py-6">
-          CozyStay in the heart of the mountains is an architectural<br />
-          masterpiece offering contemporary accommodations<br />
-          with unrivalled ski and hiking trails.
+        <h3 className="max-w-6xl text-2xl sm:text-3xl md:text-4xl font-normal text-[#1b1c1b] mx-auto leading-relaxed py-4">
+          Moonlit Resort is a premium leisure and event destination
+          located near the world-famous Chitwan National Park,
+          designed to harmonize with nature and authentic Nepali culture.<br />
+
         </h3>
-        <p className="text-md sm:text-md md:text-lg font-normal text-[#1b1c1b] mx-auto leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Aenean commodo ligula eget dolor. <br /> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-        </p>
+
       </div>
 
-      <div className="relative w-full ">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="relative shadow-2xl overflow-hidden ">
-            <div className="relative pb-[50%] h-0"> {/* Reduced height here */}
-              {playVideo ? (
-                <iframe
-                  className="absolute top-0 left-0 w-full h-full"
-                  src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              ) : (
-                <div
-                  className="absolute top-0 left-0 w-full h-full cursor-pointer group"
-                  onClick={() => setPlayVideo(true)}
-                >
-                  <img
-                    src={thumbnail}
-                    alt="Video Thumbnail"
-                    className="w-full h-full object-cover transition-transform duration-500"
-                  />
-                  {/* Hover Overlay */}
-                  <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-60 transition-opacity duration-500"></div>
+      <div className="relative w-full">
+        <div className="max-w-7xl mx-auto px-4 pt-6">
+          <div className="relative shadow-2xl overflow-hidden">
+            <div className="relative pb-[50%] h-0">
+              <div className="absolute top-0 left-0 w-full h-full group">
+                <img
+                  src="/images/aboutbg.jpeg"
+                  alt="Moonlit Resort Experience"
+                  className="w-full h-full object-cover"
+                />
 
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="bg-transparent rounded-full w-32 h-32 flex items-center justify-center transition-transform transform border border-white ">
-                      <FaPlay className="text-white text-3xl ml-1" />
-                    </div>
-                  </div>
-                </div>
-              )}
+                {/* Subtle dark overlay */}
+                <div className="absolute inset-0 bg-black/25 transition-opacity duration-500"></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
     </div>
   );
 };

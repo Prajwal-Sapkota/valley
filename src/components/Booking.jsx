@@ -30,8 +30,8 @@ export default function Booking() {
   const decrement = (setter, min) => setter((prev) => Math.max(min, prev - 1));
 
   return (
-    <section className="relative mb-10 -mt-10">
-      <div className="max-w-6xl bg-[#52614e] mx-auto px-4 z-20 py-8">
+    <section className="relative -mt-10">
+      <div className="max-w-6xl bg-[#55694f] mx-auto px-4 z-20 py-8">
         <div id="form" className="grid grid-cols-1 md:grid-cols-5 gap-4 items-end">
 
           <div className="flex flex-col">
@@ -40,7 +40,7 @@ export default function Booking() {
               type="date"
               value={checkInDate}
               onChange={(e) => setCheckInDate(e.target.value)}
-              className="border border-[#ba9d75] p-2 bg-[#52614e] text-white focus:outline-none [color-scheme:dark]"
+              className="border border-[#ba9d75] p-2 bg-[#55694f] text-white focus:outline-none [color-scheme:dark]"
               min={new Date().toISOString().split("T")[0]}
             />
           </div>
@@ -51,7 +51,7 @@ export default function Booking() {
               type="date"
               value={checkOutDate}
               onChange={(e) => setCheckOutDate(e.target.value)}
-              className="border border-[#ba9d75] p-2 bg-[#52614e] text-white focus:outline-none [color-scheme:dark]"
+              className="border border-[#ba9d75] p-2 bg-[#55694f] text-white focus:outline-none [color-scheme:dark]"
               min={checkInDate}
             />
           </div>
@@ -69,13 +69,13 @@ export default function Booking() {
             <span className="text-white font-normal mb-2">Guests</span>
             <button
               onClick={() => setIsGuestDropdownOpen(!isGuestDropdownOpen)}
-              className="border border-[#ba9d75] p-2 text-left text-white bg-[#52614e] focus:outline-none"
+              className="border border-[#ba9d75] p-2 text-left text-white bg-[#55694f] focus:outline-none"
             >
               {adults} Adult{adults !== 1 ? "s" : ""}{children > 0 ? `, ${children} Child${children !== 1 ? "ren" : ""}` : ""}
             </button>
 
             {isGuestDropdownOpen && (
-              <div className="absolute top-full left-0 right-0 mt-1 bg-[#52614e] border border-[#ba9d75] rounded-lg p-4 text-white z-10">
+              <div className="absolute top-full left-0 right-0 mt-1 bg-[#55694f] border border-[#ba9d75] rounded-lg p-4 text-white z-10">
                 <div className="flex justify-between items-center mb-2">
                   <div>Adults</div>
                   <div className="flex items-center gap-2">

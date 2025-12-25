@@ -45,25 +45,25 @@ const RoomsSlider = () => {
     const prevSlide = () => setCurrent((prev) => (prev - 1 + length) % length);
 
     return (
-        <div className="bg-[#f2ece4] py-12 px-4">
+        <div className="bg-[#f2ece4] py-18 px-4">
             <div className="max-w-7xl mx-auto ">
-                <div className="flex flex-col md:flex-row justify-between items-start py-8 md:py-20">
-                    <div className="text-left mb-4 md:mb-0">
-                        <span className="text-md md:text-lg font-medium text-[#51A687] block mb-2">
+                <div className="flex flex-col md:flex-row justify-between items-start ">
+                    <div className="text-left ">
+                        <span className="text-md md:text-lg font-medium text-[#55694f] block ">
                             DISCOVER OUR LUXURY ACCOMMODATIONS
                         </span>
-                        <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#1b1c1b] font-normal">
+                        <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#1b1c1b] font-normal leading-tight py-6">
                             80 ELEGANT ROOMS & SUITES
                         </h3>
                     </div>
-                    <div className="mt-6 ">
-                        <button className="inline-flex items-center gap-2 hover:text-[#51A687] text-[#1b1c1b] font-normal py-2 px-4 md:py-3 md:px-6 transition-colors duration-300 text-base sm:text-lg md:text-xl lg:text-3xl cursor-pointer">
+                    <div className="mt-12 ">
+                        <button className="inline-flex items-center gap-2 hover:text-[#55694f] text-[#1b1c1b] font-normal py-2 px-4 md:py-3 md:px-6 transition-colors duration-300 text-base sm:text-lg md:text-xl lg:text-3xl cursor-pointer">
                             View All 80 Rooms
                             <FaArrowRight size={14} className="md:size-4" />
                         </button>
                     </div>
                 </div>
-                <div className="relative overflow-hidden shadow-lg mb-8">
+                <div className="relative overflow-hidden py-6 ">
                     <button
                         onClick={prevSlide}
                         className="absolute top-1/2 left-2 md:left-4 -translate-y-1/2 bg-black/50 text-white p-2 md:p-3 rounded-full hover:bg-black/70 z-10 cursor-pointer"
@@ -76,9 +76,10 @@ const RoomsSlider = () => {
                     >
                         <FaChevronRight size={14} />
                     </button>
+                    
 
                     <div
-                        className="flex transition-transform duration-700 ease-in-out"
+                        className="flex transition-transform duration-700 ease-in-out "
                         style={{ transform: `translateX(-${current * 100}%)` }}
                     >
                         {accommodations.map((room) => (

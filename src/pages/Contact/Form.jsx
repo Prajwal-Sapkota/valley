@@ -21,19 +21,19 @@ const Form = () => {
     };
 
     return (
-        <section className="w-full bg-white py-16 px-4 sm:px-6 lg:px-8 mb-4">
+        <section className="w-full bg-white py-18 px-4 sm:px-6 lg:px-8 mb-4">
             <div className="max-w-7xl mx-auto">
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-stretch">
                     {/* Left Side - Big Image */}
                     <div className="relative lg:w-[120%] max-w-none">
                         <img
-                            src="/images/contact4.avif"
-                            alt="Contact Us"
-                            className="w-full h-[400px] lg:h-[650px] object-cover shadow-lg"
+                            src="/images/contact.avif"
+                            alt="Moonlit Resort Contact"
+                            className="w-full h-[400px] lg:h-[700px] object-cover shadow-lg"
                         />
 
                         {/* Overlay */}
-                        <div className="absolute inset-0 bg-black/40"></div>
+                        <div className="absolute inset-0 bg-black/10"></div>
                     </div>
 
 
@@ -41,15 +41,17 @@ const Form = () => {
                     <div className="flex flex-col justify-center lg:ml-20">
                         {/* Header Section */}
                         <div className="mb-8">
-                            <span className="text-xs sm:text-sm text-[#ba9d75] font-medium uppercase tracking-wider">
-                                CONTACT US TO GET MORE DETAILS
+                            <span className="text-md sm:text-lg text-[#55694f] font-medium uppercase tracking-wider">
+                                CONTACT MOONLIT RESORT
                             </span>
                             <h2 className="text-3xl sm:text-4xl md:text-5xl font-normal text-black uppercase py-6">
-                                LET'S START A CONVERSATION
+                                PLAN YOUR JUNGLE RETREAT
                             </h2>
                             <div className="space-y-2">
                                 <p className="text-lg text-gray-600 font-normal">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolor. Aenean massa. Cumsociis natoque.
+                                    Get in touch with our hospitality team to discuss your stay, 
+                                    inquire about destination weddings, corporate retreats, 
+                                    or wellness packages at our luxury jungle resort.
                                 </p>
                                
                             </div>
@@ -94,7 +96,7 @@ const Form = () => {
                                     onChange={handleChange}
                                     rows={5}
                                     className="w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-1 focus:ring-[#ba9d75] focus:border-[#ba9d75] transition-colors resize-vertical"
-                                    placeholder="Your Message"
+                                    placeholder="Tell us about your stay: room preferences, event plans, or wellness interests"
                                     required
                                 />
                             </div>
@@ -105,7 +107,7 @@ const Form = () => {
                                     type="submit"
                                     className="bg-[#ba9d75] text-white px-12 py-4 font-normal uppercase tracking-wider hover:bg-[#ab916c] transition-colors duration-300 border border-[#ba9d75] w-full sm:w-auto"
                                 >
-                                    Send Your Message
+                                    Send Inquiry
                                 </button>
                             </div>
                         </form>

@@ -25,7 +25,7 @@ const Navigation = () => {
         { label: 'Explore', link: '/activities', hasDropdown: true },
         { label: 'Relax', link: '/wellness', hasDropdown: false },
         { label: 'About', hasDropdown: false },
-        { label: 'Our Blog', link: '/blog', hasDropdown: false },
+        { label: 'Contact', link: '/contact', hasDropdown: false },
     ];
 
     return (
@@ -88,8 +88,7 @@ const Navigation = () => {
 
                         {/* Right-side Desktop Nav */}
                         <div className="hidden lg:flex items-center space-x-4 z-50 mt-4 mr-20">
-                            {/* Pages Dropdown */}
-                            {/* ABOUT */}
+                          
                             <div className="relative group">
                                 <a
                                     href="/about"
@@ -103,10 +102,10 @@ const Navigation = () => {
                             {/* OUR BLOG */}
                             <div className="relative group">
                                 <a
-                                    href="/blog"
+                                    href="/contact"
                                     className="flex items-center text-white px-3 py-2 text-sm font-medium relative cursor-pointer nav"
                                 >
-                                    OUR BLOG
+                                    CONTACT
                                     <span className="absolute left-0 -bottom-1 h-[2px] bg-white w-0 group-hover:w-full transition-all duration-300"></span>
                                 </a>
                             </div>
