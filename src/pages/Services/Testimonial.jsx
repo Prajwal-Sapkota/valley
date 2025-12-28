@@ -57,11 +57,11 @@ const Testimonial = () => {
             className="relative flex items-center justify-center bg-cover bg-center "
             style={{
                 minHeight: '700px',
-                backgroundImage: 'url("/images/mountain.avif")',
+                backgroundImage: 'url("/images/chitwannp.jpg")',
             }}
         >
             {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-black opacity-80"></div>
+            <div className="absolute inset-0 bg-black opacity-60"></div>
 
             {/* Container */}
             <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">

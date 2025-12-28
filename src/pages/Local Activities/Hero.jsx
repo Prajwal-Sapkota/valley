@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Navigation from '../../components/Navigation';
 
 const Hero = () => {
-    const backgroundImageUrl = "/images/activities.avif";
+    const backgroundImageUrl = "/images/experience.jpeg";
     
     const [animateText, setAnimateText] = useState(false);
 
@@ -29,10 +29,11 @@ const Hero = () => {
                     }`}>
                         
                         <h3 className="text-2xl md:text-3xl lg:text-7xl font-normal  tracking-wider py-4">
-                            THE EXPERIENCE
+                            JUNGLE & CULTURAL EXPERIENCES
                         </h3>
                         <p className="text-lg md:text-lg lg:text-xl font-normal tracking-wide mb-6">
-                            From thrilling to relaxing. For nature, sports and culture lovers.
+                            Located close to Chitwan National Park, enjoy unforgettable adventures and rich heritage<br />
+                            experiences in a peaceful natural setting.
                         </p>
                     </div>
                 </div>

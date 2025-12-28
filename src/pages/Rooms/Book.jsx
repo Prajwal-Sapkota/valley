@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 
-export default function Book() {
+export default function Booking() {
   const [adults, setAdults] = useState(1);
   const [children, setChildren] = useState(0);
   const [rooms, setRooms] = useState(1);
@@ -30,52 +30,52 @@ export default function Book() {
   const decrement = (setter, min) => setter((prev) => Math.max(min, prev - 1));
 
   return (
-    <section className="relative mb-12 mt-6">
-      <div className="max-w-6xl  bg-white mx-auto px-4 z-20 py-8">
+    <section className="relative py-12">
+      <div className="max-w-6xl bg-[#55694f] mx-auto px-4 z-20 py-8">
         <div id="form" className="grid grid-cols-1 md:grid-cols-5 gap-4 items-end">
 
           <div className="flex flex-col">
-            <h1 className="text-black font-medium mb-2">Check In</h1>
+            <span className="text-white font-medium mb-2">Check In</span>
             <input
               type="date"
               value={checkInDate}
               onChange={(e) => setCheckInDate(e.target.value)}
-              className="border border-[#ba9d75] p-2  bg-white text-black focus:outline-none"
+              className="border border-[#ba9d75] p-2 bg-[#55694f] text-white focus:outline-none [color-scheme:dark]"
               min={new Date().toISOString().split("T")[0]}
             />
           </div>
 
           <div className="flex flex-col">
-            <h1 className="text-black font-medium mb-2">Check Out</h1>
+            <span className="text-white font-normal mb-2">Check Out</span>
             <input
               type="date"
               value={checkOutDate}
               onChange={(e) => setCheckOutDate(e.target.value)}
-              className="border border-[#ba9d75] p-2  bg-white text-black focus:outline-none"
+              className="border border-[#ba9d75] p-2 bg-[#55694f] text-white focus:outline-none [color-scheme:dark]"
               min={checkInDate}
             />
           </div>
 
           <div className="flex flex-col">
-            <h1 className="text-black font-medium mb-2">Rooms</h1>
-            <div className="border border-[#ba9d75]  p-2 flex justify-between items-center text-black">
+            <span className="text-white font-normal mb-2">Rooms</span>
+            <div className="border border-[#ba9d75] p-2 flex justify-between items-center text-white">
               <button onClick={() => decrement(setRooms, 1)}>-</button>
               <span>{rooms}</span>
               <button onClick={() => increment(setRooms)}>+</button>
             </div>
           </div>
 
-          <div  className="flex flex-col relative" ref={dropdownRef}>
-            <h1 className="text-black font-medium mb-2">Guests</h1>
+          <div className="flex flex-col relative" ref={dropdownRef}>
+            <span className="text-white font-normal mb-2">Guests</span>
             <button
               onClick={() => setIsGuestDropdownOpen(!isGuestDropdownOpen)}
-              className="border border-[#ba9d75] p-2 text-left text-black bg-white focus:outline-none"
+              className="border border-[#ba9d75] p-2 text-left text-white bg-[#55694f] focus:outline-none"
             >
               {adults} Adult{adults !== 1 ? "s" : ""}{children > 0 ? `, ${children} Child${children !== 1 ? "ren" : ""}` : ""}
             </button>
 
             {isGuestDropdownOpen && (
-              <div className="absolute top-full left-0 right-0 mt-1 bg-white border border-yellow-400 rounded-lg p-4 text-black-10">
+              <div className="absolute top-full left-0 right-0 mt-1 bg-[#55694f] border border-[#ba9d75] rounded-lg p-4 text-white z-10">
                 <div className="flex justify-between items-center mb-2">
                   <div>Adults</div>
                   <div className="flex items-center gap-2">
@@ -85,7 +85,7 @@ export default function Book() {
                   </div>
                 </div>
                 <div className="flex justify-between items-center">
-                  <div>Children</div>
+                  <span>Children</span>
                   <div className="flex items-center gap-2">
                     <button onClick={() => decrement(setChildren, 0)}>-</button>
                     <span>{children}</span>
@@ -97,7 +97,7 @@ export default function Book() {
           </div>
 
           <div>
-            <button className="w-full bg-[#ba9d75] text-white font-normal py-3 px-6  hover:bg-[#ab916c] transition-colors cursor-pointer">
+            <button className="w-full bg-[#ba9d75] text-white font-normal py-3 px-6 hover:bg-[#ab916c] transition-colors cursor-pointer">
               Check Availability
             </button>
           </div>

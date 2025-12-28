@@ -2,26 +2,23 @@ import { MdCall } from "react-icons/md";
 
 export default function Culinary() {
     return (
-        <div className="w-full bg-white py-24">
+        <div className="w-full bg-white py-12">
             <div className="max-w-[1400px] mx-auto px-8 text-black">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
                     
                     {/* Left Column */}
-                    <div className=" text-left space-y-12 py-12">
+                    <div className=" text-left space-y-12 py-8">
                         
                         {/* Text Block */}
                         <div className="space-y-4">
-                            <span className=" text-sm font-medium text-[#ba9d75] uppercase tracking-widest">
-                                CURATED CULINARY EXPERIENCES
+                            <span className=" text-md lg:text-lg font-medium text-[#55694f] uppercase tracking-widest">
+                                MOONLIT DINING EXPERIENCE
                             </span>
                             <h3 className="text-4xl md:text-5xl font-normal text-[#1b1c1b] leading-tight py-4">
-                                INDULGE YOUR SENSES AND DISCOVER NEW FLAVORS
+                                ALL-DAY DINING & POOL BAR
                             </h3>
                             <p className=" text-lg text-gray-600 leading-relaxed font-normal">
-                                The experienced chefs creates international specialties with unique flavors.
-                                Relax with gourmet cuisine and signature cocktails enhanced by beautiful music and
-                                stunning city views. From seasonal menus to diverse dining experiences,
-                                see what our chefs are preparing for you.
+                                Enjoy a diverse menu of international cuisines curated by our experienced chefs, paired with a wide selection of beverages. Unwind by our outdoor swimming pool with refreshing cocktails, mocktails, and light snacks in a scenic open-air setting. Experience culinary excellence in both indoor and outdoor seating options, offering beautiful views of our lush gardens and tranquil streams.
                             </p>
                         </div>
 
@@ -35,7 +32,7 @@ export default function Culinary() {
                                 <h1
                                     className=" text-left text-2xl sm:text-3xl font-normal text-black hover:text-[#ba9d75] transition-colors duration-300 number"
                                 >
-                                    +41 22 345 66 77
+                                    +977 9804161233
                                 </h1>
                             </div>
                         </div>
@@ -81,7 +78,7 @@ export default function Culinary() {
                             {/* Wine List Inside */}
                             <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center text-white mb-2">
                                 <span className="text-3xl font-light tracking-wide font-normal">
-                                    Wine List
+                                    Beverage List
                                 </span>
                             </div>
                         </div>

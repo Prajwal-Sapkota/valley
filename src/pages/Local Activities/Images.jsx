@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 
 export default function Images() {
   const suites = [
-    { id: 1, image: "/images/room3.avif" },
-    { id: 2, image: "/images/res2.avif" },
-    { id: 3, image: "/images/room6.avif" },
-    { id: 4, image: "/images/res3.avif" },
+    { id: 1, image: "/images/res8.avif" },
+    { id: 2, image: "/images/deluxe.jpeg" },
+    { id: 3, image: "/images/res7.avif" },
+    { id: 4, image: "/images/wellness.avif" },
     { id: 5, image: "/images/spa.avif" },
     { id: 5, image: "/images/res1.avif" },
-    { id: 5, image: "/images/room5.avif" },
+    { id: 5, image: "/images/chitwannp.jpg" },
   ];
 
   const [columns, setColumns] = useState(7);

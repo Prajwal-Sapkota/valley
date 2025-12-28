@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 export default function Checkout() {
 
     const suites = [
-        { id: 1, image: "/images/room4.avif" },
-        { id: 2, image: "/images/room5.avif" },
-        { id: 3, image: "/images/room6.avif" },
-        { id: 4, image: "/images/room7.avif" },
-        { id: 5, image: "/images/spa.avif" }
-
+        { id: 1, image: "/images/table.avif" },
+        { id: 2, image: "/images/res7.avif" },
+        { id: 3, image: "/images/res8.avif" },
+        { id: 4, image: "/images/res9.avif" },
+        { id: 5, image: "/images/res10.avif" }
     ];
 
     const [slidesToShow, setSlidesToShow] = useState(5);
@@ -57,24 +57,24 @@ export default function Checkout() {
     }, [currentIndex]);
 
     return (
-        <section className="w-full flex flex-col items-center text-center">
+        <section className="w-full flex flex-col items-center text-center pt-18">
 
-            <div className="max-w-4xl mt-20 mb-20">
-                <span className="text-xs sm:text-sm text-[#ba9d75] font-medium uppercase">
-                    Check out all restaurants and bars
+            <div className="max-w-4xl ">
+                <span className="text-md sm:text-lg text-[#55694f] font-medium uppercase">
+                    Moonlit Resort Experiences
                 </span>
 
                 <h3 className="text-2xl sm:text-3xl md:text-5xl font-normal text-black uppercase py-8">
-                    Interested in afternoon tea, bar, cigar lounge?
+                    Discover More Than Just Dining
                 </h3>
 
                 <p className="text-lg font-normal text-black mb-10">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br />
-                    Cras dapibus. Vivamus elementum semper nisi.
+                    At Moonlit Resort, enjoy not just exquisite dining but also jungle adventures, wellness sanctuary,<br />
+                    and premium event spaces—all in a serene natural setting near Chitwan National Park.
                 </p>
 
                 <button className="bg-[#ba9d75] text-white border border-[#ba9d78] w-64 py-3 font-normal hover:bg-[#ab916c]">
-                    View All Restaurants
+                    Explore All Experiences
                 </button>
             </div>
 
@@ -86,7 +86,7 @@ export default function Checkout() {
                     onClick={prevSlide}
                     className="absolute left-0 top-1/2 -translate-y-1/2 bg-black/50 w-15 h-15 flex items-center justify-center rounded-full text-white z-20 ml-8"
                 >
-                    ‹
+                    <FaChevronLeft/>
                 </button>
 
                 {/* Right Button */}
@@ -94,7 +94,7 @@ export default function Checkout() {
                     onClick={nextSlide}
                     className="absolute right-0 top-1/2 -translate-y-1/2 bg-black/50 w-15 h-15 flex items-center justify-center rounded-full text-white z-20 mr-8"
                 >
-                    ›
+                    <FaChevronRight/>
                 </button>
 
                 <div className="flex">
@@ -112,28 +112,15 @@ export default function Checkout() {
                             >
                                 <img
                                     src={suite.image}
-                                    alt="suite"
-                                    className="w-full h-[280px] md:h-[300px]  shadow object-cover"
+                                    alt="Moonlit Resort Experience"
+                                    className="w-full h-[280px] md:h-[300px] shadow object-cover"
                                 />
                             </div>
                         ))}
                     </div>
                 </div>
 
-                {/* Dots */}
-                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-                    {suites.map((_, i) => (
-                        <button
-                            key={i}
-                            onClick={() => {
-                                setIsTransitioning(true);
-                                setCurrentIndex(i + suites.length);
-                            }}
-                            className={`w-3 h-3 rounded-full transition-colors duration-300 ${currentIndex % suites.length === i ? "bg-[#ba9d75]" : "bg-gray-300 hover:bg-gray-400"
-                                }`}
-                        />
-                    ))}
-                </div>
+                
             </div>
         </section>
     );

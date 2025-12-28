@@ -5,9 +5,9 @@ import { MdPhoneInTalk, MdRestaurant } from "react-icons/md";
 export default function Book() {
 
     const info = [
-        { id: 1, icon: FaUserTie, title: "Dress Code", value: "Smart Casual & Elegant" },
-        { id: 2, icon: MdRestaurant, title: "Reservation", value: "Please call +41 22 345 66 77" },
-        { id: 3, icon: IoTime, title: "Opening Hours", value: "7:00 am - 10:00 pm Daily" },
+        { id: 1, icon: FaUserTie, title: "Dress Code", value: "Refined Yet Relaxed" },
+        { id: 2, icon: MdRestaurant, title: "Reservation", value: "Call  +977 9804161233" },
+        { id: 3, icon: IoTime, title: "Opening Hours", value: "All-day dining: 6:00 AM - 11:00 PM" },
     ];
 
     return (
@@ -16,11 +16,11 @@ export default function Book() {
             {/* Background Image */}
             <div 
                 className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: "url('/images/res5.avif')" }}
+                style={{ backgroundImage: "url('/images/table.avif')" }}
             />
 
             {/* Semi-transparent Overlay */}
-            <div className="absolute inset-0 bg-black/70"></div> {/* 30% opacity black overlay */}
+            <div className="absolute inset-0 bg-black/60"></div>
 
             {/* CONTENT */}
             <div className="relative max-w-6xl mx-auto h-full flex flex-col justify-center items-center px-10 space-y-12 ">
@@ -43,7 +43,7 @@ export default function Book() {
                 </div>
 
                 <button className="text-white text-xl font-normal border-b border-[#ba9d75] hover:border-transparent transition-all duration-300 py-1">
-                    Book Now
+                    Book Your Table
                 </button>
 
             </div>

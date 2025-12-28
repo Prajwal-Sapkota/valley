@@ -5,75 +5,75 @@ const RoomsList = () => {
     const roomsData = [
         {
             id: 1,
-            name: "Signature Suite",
+            name: "Deluxe Garden View Room",
+            size: "45 m²",
+            view: "Garden View",
+            guests: 2,
+            beds: 1,
+            bathrooms: 1,
+            price: 299,
+            image: "/images/deluxe.jpeg",
+            description: "Features private balcony with scenic garden views, elegant interiors with natural light, and premium bedding for ultimate comfort."
+        },
+        {
+            id: 2,
+            name: "River View Suite",
             size: "60 m²",
-            view: "Great Mountain View",
+            view: "Rapti River View",
             guests: 4,
             beds: 2,
             bathrooms: 1,
             price: 399,
-            image: "/images/room1.avif",
-            description: "The south-facing aspect affords unimpeded views of the Alps. Measuring 42 square metres, with traditional Alpine woods, warm fireplaces, and natural-stone touches."
-        },
-        {
-            id: 2,
-            name: "Deluxe Room",
-            size: "35 m²",
-            view: "Village View",
-            guests: 2,
-            beds: 1,
-            bathrooms: 1,
-            price: 379,
-            image: "/images/room2.avif",
-            description: "Bright and cozy room with modern amenities and stunning village views."
+            image: "/images/riverview.jpeg",
+            description: "Spacious suite with panoramic views of the Rapti River, featuring private balcony and luxurious amenities for family stays."
         },
         {
             id: 3,
-            name: "Double Room",
-            size: "25 m²",
-            view: "Partial Mountain View",
-            guests: 2,
-            beds: 2,
-            bathrooms: 1,
-            price: 299,
-            image: "/images/room3.avif",
-            description: "Comfortable double room perfect for couples, with essential facilities."
+            name: "Kerung Stream Villa",
+            size: "85 m²",
+            view: "Stream & Jungle View",
+            guests: 6,
+            beds: 3,
+            bathrooms: 2,
+            price: 599,
+            image: "/images/kerung.jpeg",
+            description: "Luxury villa adjacent to Kerung Stream with private garden, two bathrooms, and immersive jungle surroundings."
         },
         {
             id: 4,
-            name: "Grand Deluxe Room",
-            size: "50 m²",
-            view: "Partial Mountain View",
+            name: "Premium Jungle View Room",
+            size: "40 m²",
+            view: "Jungle Canopy View",
             guests: 2,
             beds: 1,
             bathrooms: 1,
-            price: 329,
-            image: "/images/room4.avif",
-            description: "Spacious deluxe room with elegant interiors and modern comforts."
+            price: 349,
+            image: "/images/roomhero.jpg",
+            description: "Room with breathtaking jungle canopy views, private balcony, and modern amenities for nature enthusiasts."
         },
         {
             id: 5,
-            name: "Prestige Suite",
-            size: "200 m²",
-            view: "Great Mountain View",
-            guests: 6,
-            beds: 3,
-            bathrooms: 3,
-            price: 3299,
-            image: "/images/room5.avif",
-            description: "The south-facing aspect affords unimpeded views of the Alps. Measuring 42 square metres, with traditional Alpine woods, warm fireplaces, and natural-stone touches."
-        },
-        {
-            id: 6,
-            name: "Junior Deluxe Suite",
-            size: "90 m²",
-            view: "Village View",
+            name: "Executive Suite",
+            size: "70 m²",
+            view: "Panoramic Jungle & River View",
             guests: 4,
             beds: 2,
             bathrooms: 2,
-            price: 599,
-            image: "/images/room6.avif",
-            description: "The south-facing aspect affords unimpeded views of the Alps. Measuring 42 square metres, with traditional Alpine woods, warm fireplaces, and natural-stone touches."
+            price: 499,
+            image: "/images/executive.jpeg",
+            description: "Executive suite combining luxury with nature, featuring dual views of jungle and river, premium furnishings."
+        },
+        {
+            id: 6,
+            name: "Presidential Villa",
+            size: "120 m²",
+            view: "360° Nature Views",
+            guests: 8,
+            beds: 4,
+            bathrooms: 3,
+            price: 899,
+            image: "/images/villa.jpeg",
+            description: "Ultimate luxury villa with expansive living spaces, multiple balconies, and uninterrupted views of surrounding greenery."
         }
     ];
 
@@ -82,17 +82,17 @@ const RoomsList = () => {
             <div className="max-w-7xl mx-auto px-4 py-20">
                 {/* Intro Content */}
                 <div className="max-w-4xl text-center mb-12 mx-auto">
-                    <span className="text-md md:text-lg font-medium  text-[#ba9d75] uppercase">Comfortable Rooms & Space</span>
+                    <span className="text-md md:text-lg font-medium  text-[#55694f] uppercase">Luxury Accommodation</span>
                     <h3 className="text-3xl md:text-4xl lg:text-5xl text-black font-normal py-6">
-                        Explore our refined accommodation options and find the perfect space for your stay.
+                        80 ELEGANT ROOMS & SUITES DESIGNED FOR COMFORT AND PRIVACY
                     </h3>
                     <p className="text-md text-gray-600 mb-4 font-normal">
-                        All rooms have a bathroom with bathtub and/or shower, cable television/radio, free WIFI and mini bar. In addition, all rooms are equipped with a Nespresso coffee machine. Most rooms are carpeted, some have parquet flooring.
+                        Moonlit Resort features 80 spacious rooms including Deluxe Rooms and Suites, all with private balconies, elegant interiors with natural light, high-speed Wi-Fi, modern amenities, premium bedding, and scenic views of gardens, streams, or surrounding greenery.
                     </p>
                     <span className="flex justify-center items-center  font-medium text-[#ba9d75] text-lg gap-15 py-4">
                         <div className="flex items-center gap-2">
                             <FaClock />
-                            Check In: 3:00 PM
+                            Check In: 2:00 PM
                         </div>
 
                         <span >|</span>
@@ -136,7 +136,7 @@ const RoomsList = () => {
                                     </div>
                                     <div className="flex items-center gap-2">
                                         <FaBed className="text-[#ba9d75]" />
-                                        <span>{room.beds} Bed{room.beds > 1 ? 's' : ''}</span>
+                                        <span>{room.beds} {room.beds > 1 ? 'Double Beds' : 'King Bed'}</span>
                                     </div>
                                     <div className="flex items-center gap-2">
                                         <FaBath className="text-[#ba9d75]" />
@@ -149,7 +149,7 @@ const RoomsList = () => {
                                 <div className="flex justify-start "> {/* Changed to flex justify-start */}
                                     <button id="discover" className="text-lg text-black font-light inline-flex items-center group">
                                         <button className="border-b-2 border-[#ba9d75] group-hover:border-transparent transition-all font-normal">
-                                            Discover More
+                                            View Room Details
                                         </button>
                                         <span className="ml-2 transition-transform duration-300 group-hover:translate-x-2">
                                             <FaChevronRight />
