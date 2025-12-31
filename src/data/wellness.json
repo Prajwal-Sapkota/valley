@@ -1,0 +1,108 @@
+{
+  "wellness": [
+    {
+      "id": 1,
+      "slug": "luxury-spa-treatments",
+      "title": "Luxury Spa Treatments",
+      "subtitle": "WELLNESS & SPA",
+      "description": "Experience our signature spa treatments designed for complete relaxation and rejuvenation.",
+      "fullDescription": "Indulge in our luxury spa treatments that combine traditional techniques with modern wellness practices. Our expert therapists use premium organic products to provide customized massages, body treatments, and facial therapies. Each treatment is designed to relieve stress, improve circulation, and promote overall well-being in our serene spa environment.",
+      "image": "/images/spa1.avif",
+      "gallery": [
+        "/images/spa3.jpg",
+        "/images/spa4.jpg"
+        
+      ],
+      "duration": "60-120 minutes",
+      "bestFor": ["Stress Relief", "Muscle Relaxation", "Skin Rejuvenation"],
+      "price": 75,
+      "priceUnit": "per session",
+      "minimumAge": 16,
+      "type": "Individual Session",
+      "available": "Daily"
+    },
+    {
+      "id": 2,
+      "slug": "steam-sauna",
+      "title": "Steam & Sauna",
+      "subtitle": "DETOX THERAPY",
+      "description": "Detoxify and rejuvenate with our traditional steam bath and modern sauna facilities.",
+      "fullDescription": "Experience the healing benefits of heat therapy with our state-of-the-art steam room and traditional sauna. The steam room helps open pores, improve circulation, and relieve respiratory issues with moist heat, while the dry heat sauna promotes detoxification, muscle recovery, and stress relief. Both facilities are maintained at optimal temperatures for maximum therapeutic benefits.",
+      "image": "/images/steam.avif",
+      "gallery": [
+        "/images/steam1.jpeg",
+        "/images/steam2.jpg"
+      ],
+      "duration": "30-60 minutes",
+      "bestFor": ["Detoxification", "Respiratory Health", "Muscle Recovery"],
+      "price": 40,
+      "priceUnit": "per session",
+      "minimumAge": 14,
+      "type": "Facility Access",
+      "available": "Year-round"
+    },
+    {
+      "id": 3,
+      "slug": "jacuzzi-therapy",
+      "title": "Jacuzzi Therapy",
+      "subtitle": "HYDROTHERAPY",
+      "description": "Relax and unwind in our therapeutic jacuzzi with hydrotherapy benefits.",
+      "fullDescription": "Soak in our therapeutic jacuzzi featuring hydrotherapy jets that target pressure points and promote muscle relaxation. The warm water and massaging jets help relieve joint pain, improve circulation, and reduce stress. Our jacuzzi area offers private views of the natural surroundings, creating a perfect environment for relaxation and rejuvenation.",
+      "image": "/images/jacuzzi.avif",
+      "gallery": [
+        "/images/jacuzzi1.jpg",
+        "/images/jacuzzi2.webp"
+      ],
+      "duration": "30-45 minutes",
+      "bestFor": ["Muscle Relief", "Joint Pain", "Stress Reduction"],
+      "price": 50,
+      "priceUnit": "per session",
+      "minimumAge": 12,
+      "type": "Private Session",
+      "available": "Year-round"
+    },
+    {
+      "id": 4,
+      "slug": "ice-bath-therapy",
+      "title": "Ice Bath Therapy",
+      "subtitle": "CRYOTHERAPY",
+      "description": "Experience the invigorating benefits of ice bath therapy for recovery and rejuvenation.",
+      "fullDescription": "Challenge your body with our controlled ice bath therapy sessions. This cryotherapy treatment helps reduce inflammation, speed up muscle recovery, boost circulation, and enhance mental clarity. Under professional supervision, experience the invigorating benefits of cold therapy that athletes and wellness enthusiasts swear by for optimal recovery and vitality.",
+      "image": "/images/icebath.avif",
+      "gallery": [
+        "/images/ice1.webp",
+        "/images/ice2.jpg"
+      ],
+      "duration": "5-15 minutes",
+      "bestFor": ["Muscle Recovery", "Inflammation Reduction", "Mental Clarity"],
+      "price": 55,
+      "priceUnit": "per session",
+      "minimumAge": 18,
+      "type": "Guided Session",
+      "available": "By Appointment"
+    },
+    {
+      "id": 5,
+      "slug": "yoga-meditation",
+      "title": "Yoga & Meditation",
+      "subtitle": "MIND-BODY BALANCE",
+      "description": "Find inner peace and balance with our guided yoga and meditation sessions.",
+      "fullDescription": "Connect your mind, body, and spirit with our daily yoga and meditation sessions led by certified instructors. Practice in our dedicated wellness studio overlooking natural surroundings. We offer various styles including Hatha, Vinyasa, and restorative yoga, along with guided meditation techniques suitable for all levels. These sessions help improve flexibility, reduce stress, and promote mental clarity.",
+      "image": "/images/yoga.jpg",
+      "gallery": [
+        "/images/yoga1.jpg",
+        "/images/yoga2.jpeg",
+        "/images/meditation1.webp",
+        "/images/meditation2.jpeg"
+
+      ],
+      "duration": "60-90 minutes",
+      "bestFor": ["Stress Reduction", "Flexibility", "Mental Peace"],
+      "price": 35,
+      "priceUnit": "per session",
+      "minimumAge": 8,
+      "type": "Group Class",
+      "available": "Daily Classes"
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaArrowRight, FaUsers, FaRulerCombined, FaBed, FaBath, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const RoomsSlider = () => {
     const accommodations = [
@@ -11,7 +12,7 @@ const RoomsSlider = () => {
             beds: "1 King Bed",
             bathroom: "1 Bathroom",
             image: "/images/deluxe.jpeg",
-            link: "#"
+            link: "/rooms/deluxe-garden-view-room"
         },
         {
             id: 2,
@@ -21,7 +22,7 @@ const RoomsSlider = () => {
             beds: "2 Double Beds",
             bathroom: "1 Bathroom",
             image: "/images/riverview.jpeg",
-            link: "#"
+            link: "/rooms/river-view-suite"
         },
         {
             id: 3,
@@ -31,7 +32,7 @@ const RoomsSlider = () => {
             beds: "3 Beds",
             bathroom: "2 Bathrooms",
             image: "/images/kerung.jpeg",
-            link: "#"
+            link: "/rooms/kerung-stream-villa"
         }
     ];
 
@@ -54,13 +55,14 @@ const RoomsSlider = () => {
                         </h3>
                     </div>
                     <div className="mt-4 sm:mt-6 md:mt-0">
-                        <button className="inline-flex items-center gap-1 sm:gap-2 hover:text-[#55694f] text-[#1b1c1b] font-normal py-1 sm:py-2 md:py-3 px-3 sm:px-4 md:px-6 transition-colors duration-300 text-sm sm:text-base md:text-lg lg:text-xl cursor-pointer">
+                        <Link to="/rooms" className="inline-flex items-center gap-1 sm:gap-2 hover:text-[#55694f] text-[#1b1c1b] font-normal py-1 sm:py-2 md:py-3 px-3 sm:px-4 md:px-6 transition-colors duration-300 text-sm sm:text-base md:text-lg lg:text-xl cursor-pointer"
+                            onClick={() => window.scrollTo(0, 0)}>
                             View All 80 Rooms
                             <FaArrowRight className="text-xs sm:text-sm md:text-base" />
-                        </button>
+                        </Link>
                     </div>
                 </div>
-                
+
                 <div className="relative overflow-hidden py-6 ">
                     <button
                         onClick={prevSlide}
@@ -74,21 +76,26 @@ const RoomsSlider = () => {
                     >
                         <FaChevronRight size={14} />
                     </button>
-                    
+
 
                     <div
                         className="flex transition-transform duration-700 ease-in-out "
                         style={{ transform: `translateX(-${current * 100}%)` }}
                     >
                         {accommodations.map((room) => (
-                            <div key={room.id} className="min-w-full relative h-[400px] sm:h-[500px] md:h-[600px]">
+                            <Link
+                                key={room.id}
+                                to={room.link}
+                                onClick={() => window.scrollTo(0, 0)}
+                                className="min-w-full relative h-[400px] sm:h-[500px] md:h-[600px] cursor-pointer block"
+                            >
                                 <img
                                     src={room.image}
                                     alt={room.name}
                                     className="w-full h-full object-cover"
                                 />
                                 <div className="absolute inset-0 bg-black/40"></div>
-                                
+
 
                                 <div className="absolute inset-0 flex flex-col justify-center items-center p-4 md:p-10 text-white text-center space-y-2 md:space-y-4 font-normal">
                                     <h3 className="text-2xl sm:text-3xl md:text-5xl font-normal">{room.name}</h3>
@@ -99,7 +106,7 @@ const RoomsSlider = () => {
                                         <span className="flex items-center gap-1 md:gap-2"><FaBath /> {room.bathroom}</span>
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
                         ))}
                     </div>
                 </div>

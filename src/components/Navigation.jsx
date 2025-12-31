@@ -16,7 +16,7 @@ const Navigation = () => {
         { label: 'HOME', link: '/', hasDropdown: true },
         { label: 'ROOMS', link: '/rooms', hasDropdown: true },
         { label: 'DINE', link: '/restaurant', hasDropdown: true },
-        { label: 'EXPLORE', link: '/activities', hasDropdown: true },
+        { label: 'EXPLORE', link: '/experiences', hasDropdown: true },
         { label: 'RELAX', link: '/wellness', hasDropdown: false },
     ];
 
@@ -24,7 +24,7 @@ const Navigation = () => {
         { label: 'Home', link: '/', hasDropdown: false },
         { label: 'Rooms', link: '/rooms', hasDropdown: false },
         { label: 'Dine', link: '/restaurant', hasDropdown: true },
-        { label: 'Explore', link: '/activities', hasDropdown: true },
+        { label: 'Explore', link: '/experiences', hasDropdown: true },
         { label: 'Relax', link: '/wellness', hasDropdown: false },
         { label: 'About', link: '/about', hasDropdown: false },
         { label: 'Contact', link: '/contact', hasDropdown: false },

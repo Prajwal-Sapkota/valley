@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
-const Explore = () => {
-  // Initialize state for 6 sections
+const Activities = () => {
   const [isVisible, setIsVisible] = useState(Array(6).fill(false));
   const sectionRefs = Array(6).fill(null).map(() => useRef(null));
 
@@ -29,6 +29,8 @@ const Explore = () => {
 
   const sections = [
     {
+      id: 1,
+      slug: "jeep-safari-adventure",
       title: "Jeep Safari Adventure",
       subtitle: "CHITWAN EXPLORATION",
       text: "Cover vast areas of Chitwan National Park with our professional Jeep Safaris. Access remote locations and increase your chances of spotting diverse wildlife including tigers, rhinos, and exotic birds with experienced guides.",
@@ -41,6 +43,8 @@ const Explore = () => {
       reverse: true,
     },
     {
+      id: 2,
+      slug: "elephant-ride-experience",
       title: "Elephant Ride Experience",
       subtitle: "CHITWAN ADVENTURES",
       text: "Explore Chitwan National Park from a unique perspective with our guided elephant rides. Traverse through diverse habitats while spotting wildlife in their natural environment, creating unforgettable jungle memories.",
@@ -53,6 +57,8 @@ const Explore = () => {
       reverse: false,
     },
     {
+      id: 3,
+      slug: "canoeing-on-rapti-river",
       title: "Canoeing on Rapti River",
       subtitle: "RIVER ADVENTURES",
       text: "Enjoy serene canoeing experiences along the Rapti River near our resort. Glide through tranquil waters while spotting crocodiles, aquatic birds, and riverside wildlife in a peaceful natural setting.",
@@ -65,6 +71,8 @@ const Explore = () => {
       reverse: true,
     },
     {
+      id: 4,
+      slug: "jungle-walking-tour",
       title: "Jungle Walking Tour",
       subtitle: "NATURE IMMERSION",
       text: "Immerse yourself in the jungle with guided walking tours through Chitwan National Park. Experience the forest up close, learn about local flora and fauna, and connect deeply with nature in our peaceful surroundings.",
@@ -77,6 +85,8 @@ const Explore = () => {
       reverse: false,
     },
     {
+      id: 5,
+      slug: "village-tour-experience",
       title: "Village Tour Experience",
       subtitle: "LOCAL CULTURE",
       text: "Explore authentic Tharu villages near Chitwan National Park. Learn about traditional lifestyles, local craftsmanship, and experience the warm hospitality of the local communities through immersive village tours.",
@@ -89,6 +99,8 @@ const Explore = () => {
       reverse: true,
     },
     {
+      id: 6,
+      slug: "tharu-cultural-dance-show",
       title: "Tharu Cultural Dance Show",
       subtitle: "CULTURAL NIGHTS",
       text: "Experience the rich heritage of the region with our Tharu Cultural Dance Show, hosted every alternate day exclusively for our guests. Enjoy traditional music, vibrant costumes, and authentic performances showcasing local traditions.",
@@ -101,6 +113,7 @@ const Explore = () => {
       reverse: false,
     },
   ];
+
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-12 md:py-18">
@@ -158,9 +171,13 @@ const Explore = () => {
               <p className="text-white leading-relaxed text-sm sm:text-base md:text-lg font-normal mb-6 md:mb-8">
                 {section.text}
               </p>
-              <button className="bg-transparent text-white px-6 md:px-8 py-2 md:py-3 font-normal hover:bg-[#ba9d78] transition-colors duration-300 uppercase tracking-wide border border-[#ba9d75] text-sm md:text-base">
+              <Link
+                to={`/experiences/${section.slug}`}
+                className="inline-block bg-transparent text-white px-6 md:px-8 py-2 md:py-3 font-normal hover:bg-[#ba9d78] transition-colors duration-300 uppercase tracking-wide border border-[#ba9d75] text-sm md:text-base"
+                onClick={() => window.scrollTo(0, 0)}
+              >
                 Book Experience
-              </button>
+              </Link>
 
               <div className="grid grid-cols-3 gap-2 md:gap-4 text-white py-4 md:py-6">
                 {section.stats.map((stat, idx2) => (
@@ -182,4 +199,4 @@ const Explore = () => {
   );
 };
 
-export default Explore;
+export default Activities;

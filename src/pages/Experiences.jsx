@@ -1,16 +1,16 @@
 import Footer from "../components/Footer";
-import Explore from "./Local Activities/Explore";
+import Activities from "./Experiences/Activities";
 
-import Hero from "./Local Activities/Hero";
-import Images from "./Local Activities/Images";
+import Hero from "./Experiences/Hero";
+import Images from "./Experiences/Images";
 
 
-function Activities() {
+function Experiences() {
   return (
     <>
       <div className="relative overflow-x-hidden">
         <Hero/>
-        <Explore/>
+        <Activities/>
         <Images/>
         
         
@@ -22,4 +22,4 @@ function Activities() {
   );
 }
 
-export default Activities;
+export default Experiences;

@@ -1,0 +1,207 @@
+{
+  "experiences": [
+    {
+      "id": 1,
+      "slug": "jeep-safari-adventure",
+      "title": "Jeep Safari Adventure",
+      "subtitle": "CHITWAN EXPLORATION",
+      "description": "Cover vast areas of Chitwan National Park with our professional Jeep Safaris. Access remote locations and increase your chances of spotting diverse wildlife including tigers, rhinos, and exotic birds with experienced guides.",
+      "fullDescription": "Embark on an unforgettable Jeep Safari Adventure through Chitwan National Park, a UNESCO World Heritage Site. Our experienced guides will take you deep into the jungle where you can spot the famous Bengal tiger, one-horned rhinoceros, wild elephants, and over 500 species of birds. The open-top jeep allows for optimal wildlife viewing and photography opportunities.\n\nThis half-day or full-day safari includes professional guides, refreshments, and all necessary permits. We provide binoculars and wildlife spotting guides to enhance your experience. Perfect for wildlife enthusiasts and photographers seeking authentic jungle encounters.",
+      "image": "/images/jeep.jpg",
+      "gallery": [
+        "/images/jeep1.webp",
+        "/images/jeep2.jpg",
+        "/images/jeep3.jpg"
+      ],
+      "duration": "4-6 hours",
+      "groupSize": "Up to 6 persons",
+      "bestTime": "Morning or Afternoon",
+      "difficulty": "Easy",
+      "included": [
+        "Professional wildlife guide",
+        "Park entry permits",
+        "Refreshments",
+        "Binoculars",
+        "Wildlife spotting guide",
+        "Hotel pickup & drop"
+      ],
+      "price": 85,
+      "priceUnit": "per person",
+      "category": "Adventure"
+    },
+    {
+      "id": 2,
+      "slug": "elephant-ride-experience",
+      "title": "Elephant Ride Experience",
+      "subtitle": "CHITWAN ADVENTURES",
+      "description": "Explore Chitwan National Park from a unique perspective with our guided elephant rides. Traverse through diverse habitats while spotting wildlife in their natural environment, creating unforgettable jungle memories.",
+      "fullDescription": "Experience the jungle like never before with our traditional elephant rides through Chitwan National Park. Riding on the back of these gentle giants allows you to access areas inaccessible by vehicle and get up close to wildlife without disturbing their natural habitat.\n\nOur trained elephants and experienced mahouts (elephant handlers) ensure a safe and memorable journey through the dense forests and grasslands. This 2-hour experience includes elephant feeding session, safety briefing, and opportunities to spot deer, monkeys, wild boar, and if you're lucky, the elusive tiger or rhino.",
+      "image": "/images/elephant.jpg",
+      "gallery": [
+        "/images/elephant1.jpg",
+        "/images/elephant2.jpg",
+        "/images/elephant3.webp"
+      ],
+      "duration": "2 hours",
+      "groupSize": "2 persons per elephant",
+      "bestTime": "Early Morning",
+      "difficulty": "Easy",
+      "included": [
+        "Trained elephant with mahout",
+        "Safety equipment",
+        "Elephant feeding session",
+        "Wildlife guide",
+        "Photography opportunities",
+        "Safety briefing"
+      ],
+      "price": 65,
+      "priceUnit": "per person",
+      "category": "Wildlife"
+    },
+    {
+      "id": 3,
+      "slug": "canoeing-on-rapti-river",
+      "title": "Canoeing on Rapti River",
+      "subtitle": "RIVER ADVENTURES",
+      "description": "Enjoy serene canoeing experiences along the Rapti River near our resort. Glide through tranquil waters while spotting crocodiles, aquatic birds, and riverside wildlife in a peaceful natural setting.",
+      "fullDescription": "Drift peacefully along the Rapti River with our guided canoeing experience. This gentle adventure allows you to observe the rich aquatic life of Chitwan from a unique perspective. Watch for marsh mugger crocodiles basking on the banks, spot colorful kingfishers and other water birds, and enjoy the serene beauty of the river ecosystem.\n\nOur stable canoes and experienced guides ensure a safe and relaxing journey suitable for all ages. This 1.5-hour excursion includes safety briefing, life jackets, and opportunities for bird watching and photography. Perfect for nature lovers seeking a calm yet engaging river experience.",
+      "image": "/images/canoeing.jpg",
+      "gallery": [
+        "/images/canoe1.jpg",
+        "/images/canoe2.jpg",
+        "/images/canoe3.jpeg"
+      ],
+      "duration": "1.5 hours",
+      "groupSize": "2-3 persons per canoe",
+      "bestTime": "Morning or Sunset",
+      "difficulty": "Easy",
+      "included": [
+        "Stable canoe",
+        "Life jackets",
+        "Experienced guide",
+        "Safety briefing",
+        "Binoculars",
+        "Bird watching guide"
+      ],
+      "price": 45,
+      "priceUnit": "per person",
+      "category": "River"
+    },
+    {
+      "id": 4,
+      "slug": "jungle-walking-tour",
+      "title": "Jungle Walking Tour",
+      "subtitle": "NATURE IMMERSION",
+      "description": "Immerse yourself in the jungle with guided walking tours through Chitwan National Park. Experience the forest up close, learn about local flora and fauna, and connect deeply with nature in our peaceful surroundings.",
+      "fullDescription": "Connect with nature on a deeper level with our guided jungle walking tours. Led by experienced naturalists, these walks take you through different habitats within Chitwan National Park where you'll learn about medicinal plants, animal tracks, bird calls, and the intricate ecosystem of the jungle.\n\nThis 3-hour walking safari includes learning about local flora and fauna, identifying animal signs, and understanding jungle survival techniques. Our guides are trained in wildlife safety and carry necessary communication equipment. Suitable for those who want to experience the jungle at a slower, more immersive pace.",
+      "image": "/images/junglewalk.jpg",
+      "gallery": [
+        "/images/walk1.jpg",
+        "/images/walk2.webp",
+        "/images/walk3.jpg"
+      ],
+      "duration": "3 hours",
+      "groupSize": "Up to 8 persons",
+      "bestTime": "Early Morning",
+      "difficulty": "Moderate",
+      "included": [
+        "Experienced naturalist guide",
+        "Walking permits",
+        "Walking sticks",
+        "Refreshments",
+        "First aid kit",
+        "Wildlife safety briefing"
+      ],
+      "price": 55,
+      "priceUnit": "per person",
+      "category": "Nature"
+    },
+    {
+      "id": 5,
+      "slug": "village-tour-experience",
+      "title": "Village Tour Experience",
+      "subtitle": "LOCAL CULTURE",
+      "description": "Explore authentic Tharu villages near Chitwan National Park. Learn about traditional lifestyles, local craftsmanship, and experience the warm hospitality of the local communities through immersive village tours.",
+      "fullDescription": "Discover the rich cultural heritage of the Tharu people with our immersive village tour experience. Visit traditional Tharu villages to learn about their unique culture, architecture, agriculture practices, and daily life. Meet local artisans, observe traditional crafts, and understand the harmonious relationship between the Tharu community and the jungle.\n\nThis 2.5-hour cultural experience includes visits to local homes, traditional dance demonstrations (when available), and opportunities to purchase authentic handicrafts directly from artisans. Our cultural guides provide deep insights into Tharu traditions and their sustainable way of life.",
+      "image": "/images/village.jpg",
+      "gallery": [
+        "/images/village1.jpg",
+        "/images/village2.jpg",
+        "/images/village3.jpg"
+      ],
+      "duration": "2.5 hours",
+      "groupSize": "Up to 10 persons",
+      "bestTime": "Morning or Afternoon",
+      "difficulty": "Easy",
+      "included": [
+        "Cultural guide",
+        "Village visits",
+        "Traditional craft demonstration",
+        "Local interactions",
+        "Transportation to villages",
+        "Cultural insights"
+      ],
+      "price": 35,
+      "priceUnit": "per person",
+      "category": "Cultural"
+    },
+    {
+      "id": 6,
+      "slug": "tharu-cultural-dance-show",
+      "title": "Tharu Cultural Dance Show",
+      "subtitle": "CULTURAL NIGHTS",
+      "description": "Experience the rich heritage of the region with our Tharu Cultural Dance Show, hosted every alternate day exclusively for our guests. Enjoy traditional music, vibrant costumes, and authentic performances showcasing local traditions.",
+      "fullDescription": "Immerse yourself in the vibrant culture of Nepal with our exclusive Tharu Cultural Dance Show. Performed by local Tharu artists, this captivating show features traditional dances, music, and colorful costumes that tell stories of Tharu history, agriculture, and daily life.\n\nHeld in our cultural hall every alternate evening, this 1-hour performance includes traditional stick dances (Danda Nach), peacock dances, harvest dances, and live traditional music. Guests can participate in some dances and learn about the significance of each performance from our cultural hosts. Includes complimentary traditional refreshments.",
+      "image": "/images/tharudance.jpg",
+      "gallery": [
+        "/images/cultural1.jpg",
+        "/images/cultural2.jpg",
+        "/images/cultural3.jpg"
+      ],
+      "duration": "1 hour",
+      "groupSize": "Unlimited",
+      "bestTime": "Evening (7:00 PM)",
+      "difficulty": "Easy",
+      "included": [
+        "Traditional dance performance",
+        "Live music",
+        "Cultural explanations",
+        "Traditional refreshments",
+        "Audience participation",
+        "Photography opportunities"
+      ],
+      "price": 25,
+      "priceUnit": "per person",
+      "category": "Entertainment"
+    },
+    {
+      "id": 7,
+      "slug": "cultural-experience",
+      "title": "Cultural Experience",
+      "subtitle": "LOCAL HERITAGE",
+      "description": "Immerse yourself in the rich cultural heritage of Nepal with our comprehensive cultural experience program that showcases traditional arts, crafts, and local traditions.",
+      "fullDescription": "Our Cultural Experience program offers a deep dive into the diverse heritage of Nepal, particularly focusing on the Tharu and other ethnic communities of the Chitwan region. This immersive experience includes traditional pottery making demonstrations, authentic Tharu cooking classes, local textile weaving workshops, and interactive sessions with community elders who share stories of traditions and folklore.\n\nParticipants get hands-on experience with age-old crafts, learn about sustainable living practices, and gain insights into the harmonious relationship between local communities and their natural environment. The program concludes with a traditional meal prepared using local ingredients and cooking methods.",
+      "image": "/images/cultural2.webp",
+      "gallery": [
+        "/images/cultural4.webp",
+        "/images/cultural5.jpg",
+        "/images/cultural6.png"
+      ],
+      "duration": "3-4 hours",
+      "groupSize": "Up to 8 persons",
+      "bestTime": "Morning or Afternoon",
+      "difficulty": "Easy",
+      "included": [
+        "Traditional craft workshops",
+        "Cooking class with local chef",
+        "Cultural storytelling sessions",
+        "Traditional meal",
+        "Local craft materials",
+        "Cultural guide"
+      ],
+      "price": 50,
+      "priceUnit": "per person",
+      "category": "Cultural"
+    }
+  ]
+}

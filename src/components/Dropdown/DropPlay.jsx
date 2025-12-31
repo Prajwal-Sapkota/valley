@@ -10,31 +10,31 @@ export default function DropPlay() {
             <div className="space-y-6 text-left">
               <span className="text-md font-semibold ">JUNGLE EXPERIENCES</span>
               <div  className="space-y-2 text-sm py-4 ">
-                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Overview</a>
+                <a href="/experiences" className="block hover:text-[#b99d75] cursor-pointer">Overview</a>
                 <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Chitwan Park Adventures</a>
-                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Cultural Activities</a>
+                <a href="/experiences/cultural-experience" className="block hover:text-[#b99d75] cursor-pointer">Cultural Activities</a>
               </div>
             </div>
 
             <div className="space-y-2 text-left">
               <span className="text-md font-semibold mb-4">JUNGLE ADVENTURES</span>
               <div  className="space-y-2 text-sm py-4">
-                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Elephant Ride</a>
-                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Jeep Safari</a>
-                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Canoeing</a>
-                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Jungle Walk</a>
-                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Village Tour</a>
+                <a href="/experiences/elephant-ride-experience" className="block hover:text-[#b99d75] cursor-pointer">Elephant Ride</a>
+                <a href="/experiences/jeep-safari-adventure" className="block hover:text-[#b99d75] cursor-pointer">Jeep Safari</a>
+                <a href="/experiences/canoeing-on-rapti-river" className="block hover:text-[#b99d75] cursor-pointer">Canoeing</a>
+                <a href="/experiences/jungle-walking-tour" className="block hover:text-[#b99d75] cursor-pointer">Jungle Walk</a>
+                <a href="/experiences/village-tour-experience" className="block hover:text-[#b99d75] cursor-pointer">Village Tour</a>
               </div>
             </div>
 
             <div className="space-y-2 text-left">
               <span className="text-md font-semibold mb-4">WELLNESS & SPA</span>
               <div  className="space-y-2 text-sm py-4 ">
-                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Luxury Spa Treatments</a>
-                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Steam & Sauna</a>
-                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Jacuzzi</a>
-                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Ice Bath Therapy</a>
-                <a href="#" className="block hover:text-[#b99d75] cursor-pointer">Yoga & Meditation</a>
+                <a href="/wellness/luxury-spa-treatments" className="block hover:text-[#b99d75] cursor-pointer">Luxury Spa Treatments</a>
+                <a href="/wellness/steam-sauna" className="block hover:text-[#b99d75] cursor-pointer">Steam & Sauna</a>
+                <a href="/wellness/jacuzzi-therapy" className="block hover:text-[#b99d75] cursor-pointer">Jacuzzi</a>
+                <a href="/wellness/ice-bath-therapy" className="block hover:text-[#b99d75] cursor-pointer">Ice Bath Therapy</a>
+                <a href="/wellness/yoga-meditation" className="block hover:text-[#b99d75] cursor-pointer">Yoga & Meditation</a>
               </div>
             </div>
 

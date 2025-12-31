@@ -1,0 +1,308 @@
+{
+  "rooms": [
+    {
+      "id": 1,
+      "slug": "deluxe-garden-view-room",
+      "name": "Deluxe Garden View Room",
+      "size": "45 m²",
+      "view": "Garden View",
+      "guests": 2,
+      "beds": 1,
+      "bathrooms": 1,
+      "image": "/images/deluxe.jpeg",
+      "description": "Features private balcony with scenic garden views, elegant interiors with natural light, and premium bedding for ultimate comfort.",
+      "longDescription": "Wake up to the sounds of nature and enjoy your morning coffee on your private balcony overlooking our beautifully manicured gardens. The Deluxe Garden View Room features elegant interiors with natural light, premium bedding for ultimate comfort, and modern amenities for a relaxing stay. Perfect for couples and solo travelers seeking a peaceful retreat amidst nature, this room combines contemporary design with traditional hospitality. The spacious layout and thoughtful amenities ensure every moment of your stay is comfortable and memorable, whether you're here for business or leisure.",
+      "amenities": [
+        {
+          "text": "Air Conditioner",
+          "icon": "TbAirConditioning"
+        },
+        {
+          "text": "Smart TV",
+          "icon": "FaTv"
+        },
+        {
+          "text": "Free WiFi",
+          "icon": "FaWifi"
+        },
+        {
+          "text": "Private Balcony",
+          "icon": "FaTree"
+        },
+        {
+          "text": "Espresso Machine",
+          "icon": "FaCoffee"
+        },
+        {
+          "text": "Minibar",
+          "icon": "FaGlassCheers"
+        },
+        {
+          "text": "Rainfall Shower",
+          "icon": "FaShower"
+        },
+        {
+          "text": "Safe Deposit Box",
+          "icon": "FaLock"
+        },
+        {
+          "text": "Room Service",
+          "icon": "FaBell"
+        },
+        {
+          "text": "Daily Housekeeping",
+          "icon": "FaBroom"
+        },
+        {
+          "text": "Complimentary Toiletries",
+          "icon": "FaSoap"
+        },
+        {
+          "text": "Garden View",
+          "icon": "FaLeaf"
+        }
+      ],
+      "features": [
+        "Private balcony with garden view",
+        "Premium king-size bed with Egyptian cotton linens",
+        "En-suite marble bathroom with rainfall shower",
+        "Minibar with complimentary water and snacks",
+        "In-room digital safe",
+        "24-hour room service",
+        "Daily housekeeping",
+        "Complimentary toiletries"
+      ],
+      "price": 180,
+      "priceUnit": "per night",
+      "category": "Deluxe Room"
+    },
+    {
+      "id": 2,
+      "slug": "river-view-suite",
+      "name": "River View Suite",
+      "size": "60 m²",
+      "view": "Rapti River View",
+      "guests": 4,
+      "beds": 2,
+      "bathrooms": 1,
+      "image": "/images/riverview.jpeg",
+      "description": "Spacious suite with panoramic views of the Rapti River, featuring private balcony and luxurious amenities for family stays.",
+      "longDescription": "Nestled beside the Rapti River, this suite offers breathtaking panoramic views of the river and surrounding greenery. Perfect for families or groups seeking comfort and spectacular views, the River View Suite features a separate living area, two bedrooms, and luxurious amenities designed for memorable stays. The spacious layout includes a comfortable seating area perfect for family gatherings or enjoying the river view. With enhanced privacy and premium services, this suite ensures a truly relaxing experience in the heart of nature's beauty.",
+      "amenities": [
+        {
+          "text": "Air Conditioner",
+          "icon": "TbAirConditioning"
+        },
+        {
+          "text": "Smart TV",
+          "icon": "FaTv"
+        },
+        {
+          "text": "High-Speed WiFi",
+          "icon": "FaWifi"
+        },
+        {
+          "text": "River View Balcony",
+          "icon": "FaWater"
+        },
+        {
+          "text": "Coffee Station",
+          "icon": "FaCoffee"
+        },
+        {
+          "text": "Jacuzzi Bathtub",
+          "icon": "FaHotTub"
+        },
+        {
+          "text": "Separate Living Area",
+          "icon": "FaCouch"
+        },
+        {
+          "text": "Welcome Drinks",
+          "icon": "FaGlassCheers"
+        },
+        {
+          "text": "Butler Service",
+          "icon": "FaConciergeBell"
+        },
+        {
+          "text": "Evening Turndown",
+          "icon": "FaBed"
+        },
+        {
+          "text": "Bathrobes & Slippers",
+          "icon": "FaUser"
+        },
+        {
+          "text": "Family Friendly",
+          "icon": "FaUsers"
+        }
+      ],
+      "features": [
+        "Spacious living area with river view",
+        "Two queen-size beds with premium bedding",
+        "Marble bathroom with jacuzzi tub",
+        "Separate shower and seating area",
+        "Complimentary welcome drinks",
+        "Daily newspaper delivery",
+        "Evening turndown service",
+        "Private balcony with seating"
+      ],
+      "price": 280,
+      "priceUnit": "per night",
+      "category": "Suite"
+    },
+    {
+      "id": 3,
+      "slug": "kerung-stream-villa",
+      "name": "Kerung Stream Villa",
+      "size": "85 m²",
+      "view": "Stream & Jungle View",
+      "guests": 6,
+      "beds": 3,
+      "bathrooms": 2,
+      "image": "/images/kerung.jpeg",
+      "description": "Luxury villa adjacent to Kerung Stream with private garden, two bathrooms, and immersive jungle surroundings.",
+      "longDescription": "Experience ultimate privacy and luxury in our standalone villa adjacent to Kerung Stream. This villa features a private garden, three bedrooms, two bathrooms, and immersive jungle surroundings for a truly unique stay. Perfect for families or groups seeking an exclusive jungle retreat surrounded by lush greenery, the Kerung Stream Villa offers complete seclusion with all modern comforts. The villa's design harmonizes with nature, featuring natural materials and large windows that bring the outdoors inside, creating a serene sanctuary for your vacation.",
+      "amenities": [
+        {
+          "text": "Air Conditioner",
+          "icon": "TbAirConditioning"
+        },
+        {
+          "text": "Smart TV",
+          "icon": "FaTv"
+        },
+        {
+          "text": "Ultra Fast WiFi",
+          "icon": "FaWifi"
+        },
+        {
+          "text": "Private Garden",
+          "icon": "FaTree"
+        },
+        {
+          "text": "Equipped Kitchenette",
+          "icon": "FaUtensils"
+        },
+        {
+          "text": "Outdoor Seating",
+          "icon": "FaChair"
+        },
+        {
+          "text": "Dedicated Villa Host",
+          "icon": "FaConciergeBell"
+        },
+        {
+          "text": "Private Parking",
+          "icon": "FaParking"
+        },
+        {
+          "text": "Barbecue Facilities",
+          "icon": "FaFire"
+        },
+        {
+          "text": "Two Bathrooms",
+          "icon": "FaBath"
+        },
+        {
+          "text": "Daily Maintenance",
+          "icon": "FaBroom"
+        },
+        {
+          "text": "Stream Access",
+          "icon": "FaWater"
+        }
+      ],
+      "features": [
+        "Private garden with stream view",
+        "Three bedrooms with en-suite options",
+        "Two luxury bathrooms with premium amenities",
+        "Private outdoor seating area",
+        "Fully equipped kitchenette",
+        "Daily villa maintenance",
+        "Complimentary grocery shopping service",
+        "Private check-in/check-out"
+      ],
+      "price": 450,
+      "priceUnit": "per night",
+      "category": "Villa"
+    },
+    {
+      "id": 4,
+      "slug": "premium-jungle-view-room",
+      "name": "Premium Jungle View Room",
+      "size": "40 m²",
+      "view": "Jungle Canopy View",
+      "guests": 2,
+      "beds": 1,
+      "bathrooms": 1,
+      "image": "/images/executive.jpeg",
+      "description": "Room with breathtaking jungle canopy views, private balcony, and modern amenities for nature enthusiasts.",
+      "longDescription": "Designed for nature enthusiasts, this premium room offers breathtaking views of the jungle canopy from your private balcony. Experience the authentic sights and sounds of the jungle while enjoying modern comforts and amenities. Perfect for bird watchers, nature lovers, and couples seeking a romantic jungle retreat, the Premium Jungle View Room provides an immersive experience with enhanced privacy. The room features premium soundproofing to ensure peaceful nights and special touches like binoculars and nature guides to enhance your jungle experience.",
+      "amenities": [
+        {
+          "text": "Air Conditioner",
+          "icon": "TbAirConditioning"
+        },
+        {
+          "text": "Smart TV",
+          "icon": "FaTv"
+        },
+        {
+          "text": "Jungle WiFi",
+          "icon": "FaWifi"
+        },
+        {
+          "text": "Canopy View Balcony",
+          "icon": "FaEye"
+        },
+        {
+          "text": "French Press Coffee",
+          "icon": "FaCoffee"
+        },
+        {
+          "text": "Binoculars Provided",
+          "icon": "FaBinoculars"
+        },
+        {
+          "text": "Rainforest Shower",
+          "icon": "FaShower"
+        },
+        {
+          "text": "Yoga Mat",
+          "icon": "FaSpa"
+        },
+        {
+          "text": "Soundproof Room",
+          "icon": "FaVolumeMute"
+        },
+        {
+          "text": "Wine Cooler",
+          "icon": "FaWineGlassAlt"
+        },
+        {
+          "text": "Bird Watching Guide",
+          "icon": "FaBook"
+        },
+        {
+          "text": "Romantic Setup",
+          "icon": "FaHeart"
+        }
+      ],
+      "features": [
+        "Private balcony with jungle canopy view",
+        "California king-size bed",
+        "Glass-enclosed rainforest shower",
+        "Premium soundproofing",
+        "Complimentary binoculars for bird watching",
+        "Morning yoga mat provided",
+        "Romantic turndown service",
+        "Private balcony dining option"
+      ],
+      "price": 220,
+      "priceUnit": "per night",
+      "category": "Premium Room"
+    }
+  ]
+}
