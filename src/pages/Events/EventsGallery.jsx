@@ -67,17 +67,17 @@ const EventsGallery = () => {
                 {/* Prev - Smaller buttons on mobile */}
                 <button
                     onClick={prevSlide}
-                    className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 sm:-translate-x-4 md:-translate-x-8 z-10 bg-white/80 hover:bg-white text-gray-800 p-1.5 sm:p-2 md:p-3 rounded-full shadow-lg"
+                    className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 sm:-translate-x-4 md:-translate-x-8 z-10 bg-white/80 hover:bg-white text-gray-800 p-1.5 sm:p-2 md:p-3 rounded-full shadow-lg cursor-pointer"
                 >
-                    <FaArrowLeft size={16} className="sm:w-5 md:w-6" />
+                    <FaArrowLeft size={16} className="sm:w-5 sm:h-5 md:w-6 md:h-6" />
                 </button>
 
                 {/* Next - Smaller buttons on mobile */}
                 <button
                     onClick={nextSlide}
-                    className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 sm:translate-x-4 md:translate-x-8 z-10 bg-white/80 hover:bg-white text-gray-800 p-1.5 sm:p-2 md:p-3 rounded-full shadow-lg"
+                    className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 sm:translate-x-4 md:translate-x-8 z-10 bg-white/80 hover:bg-white text-gray-800 p-1.5 sm:p-2 md:p-3 rounded-full shadow-lg cursor-pointer"
                 >
-                    <FaArrowRight size={16} className="sm:w-5 md:w-6" />
+                    <FaArrowRight size={16} className="sm:w-5 sm:h-5 md:w-6 md:h-6" />
                 </button>
 
                 {/* Cards */}
