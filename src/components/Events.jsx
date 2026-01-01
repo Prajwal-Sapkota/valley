@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Events = () => {
     const events = [
@@ -7,22 +8,26 @@ const Events = () => {
             id: 1,
             title: "Spa & Jacuzzi",
             image: "/images/jacuzzi.avif",
-            description: "Luxury spa treatments, steam & sauna, jacuzzi, and ice bath therapy for complete relaxation and rejuvenation."
+            description: "Luxury spa treatments, steam & sauna, jacuzzi, and ice bath therapy for complete relaxation and rejuvenation.",
+            link: "#"
         },
         {
             id: 2,
             title: "Swimming Pool",
             image: "/images/pool.avif",
-            description: "Scenic outdoor pool with pool bar serving refreshing cocktails, mocktails, and light bites in open-air setting."
+            description: "Scenic outdoor pool with pool bar serving refreshing cocktails, mocktails, and light bites in open-air setting.",
+            link: "#"
         },
         {
             id: 3,
             title: "Conference & Events",
             image: "/images/conference1.jpeg",
-            description: "4,800 sq. ft. hall for conferences, MICE events, destination weddings, and social celebrations with expert planning."
+            description: "4,800 sq. ft. hall for conferences, MICE events, destination weddings, and social celebrations with expert planning.",
+            link: "/events"
         }
     ];
-    
+
+
     return (
         <section className="bg-white py-8 sm:py-12 md:py-18 px-4 sm:px-6">
             <div className="max-w-7xl mx-auto">
@@ -42,7 +47,7 @@ const Events = () => {
                             key={event.id}
                             className={`relative overflow-hidden group ${index % 2 === 0 ? 'sm:-translate-y-2 md:-translate-y-4' : 'sm:translate-y-2 md:translate-y-4'} transition-transform duration-500`}
                         >
-                            <div className="relative overflow-hidden h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] xl:h-[450px] group">
+                            <div className="relative overflow-hidden h-[250px] sm:h-[300px] md:h-[350px] lg:h-[420px] xl:h-[540px] group">
                                 <img
                                     src={event.image}
                                     alt={event.title}
@@ -63,12 +68,14 @@ const Events = () => {
                                     {event.description}
                                 </p>
 
-                                <button
+                                <Link
+                                    to={event.link}
+                                     onClick={() => window.scrollTo(0, 0)}
                                     className="inline-flex items-center gap-1 sm:gap-2 text-[#1b1c1b] font-normal hover:text-[#55694f] transition-colors duration-300 cursor-pointer mt-3 sm:mt-4 text-sm sm:text-base"
                                 >
                                     Plan Your Event
                                     <FaArrowRight className="text-xs sm:text-sm" />
-                                </button>
+                                </Link>
                             </div>
                         </div>
                     ))}

@@ -30,7 +30,7 @@ export default function Booking() {
   const decrement = (setter, min) => setter((prev) => Math.max(min, prev - 1));
 
   return (
-    <section className="relative py-6 sm:py-8 md:py-12 px-4 sm:px-6">
+    <section className="relative -mt-2 sm:-mt-12 px-4 sm:px-6">
       <div className="max-w-6xl bg-[#55694f] mx-auto px-3 sm:px-4 md:px-6 py-6 sm:py-8 z-20">
         <div id="form" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-3 sm:gap-4 items-end">
 

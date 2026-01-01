@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Navigation from '../../components/Navigation';
 
 const Hero = () => {
-    const backgroundImageUrl = "/images/services.avif";
+    const backgroundImageUrl = "/images/conference.jpeg";
     
     const [animateText, setAnimateText] = useState(false);
 
@@ -17,7 +17,7 @@ const Hero = () => {
                 className="relative bg-cover bg-center bg-no-repeat text-white min-h-screen"
                 style={{ backgroundImage: `url(${backgroundImageUrl})` }}
             >
-                <div className="absolute inset-0 bg-black opacity-50"></div>
+                <div className="absolute inset-0 bg-black opacity-60"></div>
 
                 <div className="relative z-50">
                     <Navigation />
@@ -29,10 +29,10 @@ const Hero = () => {
                     }`}>
                         
                         <h3 className="text-5xl md:text-6xl lg:text-7xl font-normal  tracking-wider py-4">
-                            PREMIUM SERVICES
+                            EVENTS & CELEBRATIONS
                         </h3>
                         <p className="text-xl md:text-2xl lg:text-3xl  text-emerald-50 font-light">
-                            We strive to provide our guests with luxury, comfort & tailor made services.
+                            From elegant destination weddings to corporate MICE events
                         </p>
                     </div>
                 </div>
